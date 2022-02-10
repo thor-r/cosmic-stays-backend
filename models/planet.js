@@ -21,16 +21,18 @@ const planetSchema = new Schema({
   alienLife: { type: String },
   cryoSleepRequired: { type: String },
   lightYearsFromEarth: { type: String },
-  distanceFromEarth: { type: String, required: true },
-  travelTime: { type: Number, required: true },
-  temperature: { type: Number, required: true },
+  distanceFromEarth: { type: String },
+  travelTime: { type: String, required: true },
+  temperature: { type: String, required: true },
   dangerLevel: { type: Number, required: true },
   holidayType: { type: String },
   thingsToDo: [{ type: String }],
-  images: [{ type: Image }],
+  // images: [{ type: Image }], Need to Further look into Adding img in schema
   offers: [{ type: String }],
   reviews: [reviewSchema],
+  moons: [{ type: String }],
   owner: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
+  isReal: { type: Boolean, required: true },
 })
 
 // virtual average rating field
