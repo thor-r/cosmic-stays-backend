@@ -35,6 +35,14 @@ userSchema
     foreignField: 'owner',
   })
 
+// Creating BookedTrip Virtual Field
+userSchema
+  .virtual('bookedTrip', {
+    ref: 'Planet',
+    localField: '_id',
+    foreignField: 'owner',
+  })
+
 // Methods of pre()
 
 // Pre Validate 

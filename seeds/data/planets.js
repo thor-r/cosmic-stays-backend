@@ -46,7 +46,9 @@ export default [
     thingsToDo: 'Growing potatoes with Matt Damon, Climbing Olympus Mons',
     offers: 'Free pair of climbing boots, when you book a 3 night stay',
     isReal: true,
+    reviews: [],
   },
+
   {
     name: 'Jupiter', 
     planetOverview: 'The King of the solar system. Jupiter, the oldest planet in the solar system is volitile and unforgiving',
@@ -115,9 +117,9 @@ export default [
     alienLife: 'Yes: Fremen',
     cryoSleepRequired: 'Yes',
     lightYearsFromEarth: '3 million',
-    travelTime: '4 cryo cycles',
+    travelTime: '2 cryo cycles',
     temperature: 'Day: 70 degrees celcius',
-    dangerLevel: '6',
+    dangerLevel: 6,
     thingsToDo: 'Relax from one of the few grand Empirial compounds, or go Worm-watching from the saftey of the sky!',
     offers: 'Two Stillsuits for the price of one',
     isReal: false,
@@ -128,23 +130,15 @@ export default [
     alienLife: 'Yes: Ewok',
     cryoSleepRequired: 'Yes',
     lightYearsFromEarth: '15 million',
-  },
-  
-
-
-
-
-
-  
-
-    
-
-
-    
-  
-
-
-
-
-
+    travelTime: '10 cryo cycles',
+    temperature: 'Earth-like',
+    dangerLevel: 2,
+    thingsToDo: 'Tear through the endless forests on a speederbike',
+    offers: 'Free trip to the Destroyed Shield Generator Museum',
+    isReal: false,
+  }
+  {
+    name: 'Krpton',
+    planetOverview: ''
+  }
 ]
