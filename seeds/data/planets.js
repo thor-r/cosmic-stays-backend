@@ -153,6 +153,30 @@ export default [
     name: 'Trantor',
     planetOverview: 'TRANTOR — The capital of the First Galactic Empire. Its land surface of 200 million square kilometers was entirely domed (except for the Imperial Palace area) and underlaid with an endless city that extended beneath the continental shelves.',
     alienLife: 'Yes',
-    
+    cryoSleepRequired: 'Yes',
+    lightYearsFromEarth: '35 million',
+    travelTime: '14 cryo cycles',
+    temperature: '200 degrees above the covered surface',
+    dangerLevel: 8,
+    thingsToDo: 'Explore the endless multitude of tunnels or take a day trip to the Galactic Palace',
+    isReal: false,
   },
+  {
+    name: 'Solaris',
+    planetOverview: 'An uninhabited and inhospitable world, Solaris is covered by a single massive ocean, though the liquid that constitutes it remains a mystery to scientists.',
+    alienLife: 'Unknown',
+    cryoSleepRequired: 'Recommended',
+    lightYearsFromEarth: 13,
+    travelTime: '2 cryo cycles',
+    temperature: 'Strange: Huge fluctuations reported',
+    dangerLevel: 10,
+    thingsToDo: 'Observe the unusual movements and formations in the ocean, also observe strange behaviour in each other.',
+    isReal: false,
+  }
+  {
+    name: 'Coroscant',
+    planetOverview: 'A city-covered planet. Featuring a diverse mix of citizens and culture. It features towering skyscrapers, streams of speeder-filled air traffic, and inner levels that stretch far below the worlds surface.',
+    alienLife: 'Yes',
+    cryoSleepRequired: 'Yes',
+  }
 ]
