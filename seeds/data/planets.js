@@ -136,9 +136,23 @@ export default [
     thingsToDo: 'Tear through the endless forests on a speederbike',
     offers: 'Free trip to the Destroyed Shield Generator Museum',
     isReal: false,
-  }
+  },
   {
     name: 'Krpton',
-    planetOverview: ''
-  }
+    planetOverview: 'Krypton is a planet which orbits a red star. It is home to a great civilization which boasts advanced science and technology.',
+    alienLife: 'Yes: Krpytonians',
+    cryoSleepRequired: 'Yes',
+    lightYearsFromEarth: '27.1',
+    travelTime: '1 cryo cycle',
+    temperature: '-30 celcius',
+    dangerLevel: 2,
+    thingsToDo: 'Take your pick in exploring some one of the most advanced technologial societies in the universe',
+    isReal: false,
+  },
+  {
+    name: 'Trantor',
+    planetOverview: 'TRANTOR — The capital of the First Galactic Empire. Its land surface of 200 million square kilometers was entirely domed (except for the Imperial Palace area) and underlaid with an endless city that extended beneath the continental shelves.',
+    alienLife: 'Yes',
+    
+  },
 ]
