@@ -1,5 +1,27 @@
 export default [
   {
+    name: 'Moon', 
+    planetOverview: 'The short haul weekend destination for residents of earth. Lacks the atmosphere of other destinations',
+    distanceFromEarth: '384 Thousand km',
+    travelTime: '3 days',
+    temperature: 'Day: 90 degrees celcius. Night: -173 dgrees celcius',
+    dangerLevel: 1,
+    thingsToDo: 'Taking one small step. Great views of earth',
+    offers: 'Book now and get upgraded to an earth view room',
+    isReal: true,
+    reviews: [ {
+      text: 'Me and Buzz travelled there back in 69. Some great views of earth but been spolit by tourism since ', 
+      rating: '4',
+      owner: '000000000001',
+    }, 
+    {
+      text: 'Lacks atmosphere', 
+      rating: '3',
+      owner: '000000000004',
+    }],
+  },
+
+  {
     name: 'Mercury', 
     planetOverview: 'Red hot rocky planet a stones throw from the sun. Bring a warm blanket for the night though',
     distanceFromEarth: '130 Million km',
@@ -46,7 +68,11 @@ export default [
     thingsToDo: 'Growing potatoes with Matt Damon, Climbing Olympus Mons',
     offers: 'Free pair of climbing boots, when you book a 3 night stay',
     isReal: true,
-    reviews: [],
+    reviews: [ {
+      text: 'Planet sucks had to grow my own potatoes using, you dont want to know what.',
+      rating: '3',
+      owner: '000000000002',
+    } ],
   },
 
   {
@@ -166,17 +192,24 @@ export default [
     planetOverview: 'An uninhabited and inhospitable world, Solaris is covered by a single massive ocean, though the liquid that constitutes it remains a mystery to scientists.',
     alienLife: 'Unknown',
     cryoSleepRequired: 'Recommended',
-    lightYearsFromEarth: 13,
+    lightYearsFromEarth: '13',
     travelTime: '2 cryo cycles',
     temperature: 'Strange: Huge fluctuations reported',
     dangerLevel: 10,
     thingsToDo: 'Observe the unusual movements and formations in the ocean, also observe strange behaviour in each other.',
     isReal: false,
-  }
+  },
   {
     name: 'Coroscant',
     planetOverview: 'A city-covered planet. Featuring a diverse mix of citizens and culture. It features towering skyscrapers, streams of speeder-filled air traffic, and inner levels that stretch far below the worlds surface.',
     alienLife: 'Yes',
     cryoSleepRequired: 'Yes',
+    lightYearsFromEarth: '17 million',
+    travelTime: '3 cryo cycles',
+    temperature: 'Yes: 35 degrees celcius',
+    dangerLevel: 7,
+    thingsToDo: 'Tour the skyline on a cruiser or deep dive into one of the thousands of bars, home to explosive night-life',
+    isReal: true,
   }
+ 
 ]
