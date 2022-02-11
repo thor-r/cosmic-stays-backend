@@ -1,16 +1,35 @@
-import React, { useEffect } from 'react'
-import axios from 'axios'
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+//importing components
+import SiteNavbar from './components/SiteNavbar'
+import Home from './components/Home'
+import Footer from './components/Footer'
+
 
 function App() {
-  useEffect(() => {
-    const getData = async () => {
-      const { data } = await axios.get('/api/planets/') // * <-- replace with your endpoint
-      console.log(data)
-    }
-    getData()
-  })
+  return (
+    <div className='site-wrapper'>
+      <BrowserRouter>
+      <SiteNavbar />
+      
+      <Routes>
 
-  return <h1>Hello World</h1>
+        <Route path="/" element = {<Home />} />
+        {/* <Route path="/login" element = {<Login />} /> */}
+        {/* <Route path="/register" element = {<Register />} /> */}
+        {/* <Route path="/profile" element = {<Profile />} /> */}
+        {/* <Route path="/offers" element = {<Offers />} /> */}
+        {/* <Route path="/planet/:id element = {<ShowPlanet />} /> */}
+
+      </Routes>
+
+      <Footer />
+    </BrowserRouter>
+  
+  
+  </div >
+  )
 }
 
 export default App
