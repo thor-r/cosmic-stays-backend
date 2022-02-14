@@ -10,39 +10,17 @@ const SiteNavbar = () => {
 
 
   return (
-    <div className='nav-style'>
-
-      <div className='nav-logo'>
-      <Navbar.Brand>
-        <Link className='btn btn-logo' to='/'>Home </Link>
-      </Navbar.Brand>
-      </div>
-
-        <div className='nav-profile'>
-          <Navbar.Brand>
-            <Link className='btn btn-nav' to="/profile"> My Profile </Link>
-          </Navbar.Brand>
-        </div>
-
-        <div className='nav-register'>
-          <Navbar.Brand>
-            <Link className='btn btn-nav' to="/register"> Register </Link>
-          </Navbar.Brand>
-        </div>
-
-        <div className='nav-login'>
-          <Navbar.Brand>
-            <Link className='btn btn-nav' to="/login"> Login </Link>
-          </Navbar.Brand>
-        </div>
-
-        <div className='nav-offers'>
-          <Navbar.Brand>
-            <Link className='btn btn-nav' to="/offers"> Offers </Link>
-          </Navbar.Brand>
-        </div>
-
-    </div>
+    <Navbar  className = 'bg-white' >
+      <Container>
+      <Navbar.Brand className='btn btn-nav text-black'> Home  </Navbar.Brand>
+      <Nav>
+        <Link className='nav-profile btn btn-nav text-black' to="/profile"> My Profile </Link>
+        <Link className='nav-register btn btn-nav text-black' to="/register"> Register </Link>
+        <Link className='nav-login btn btn-nav text-black' to="/login"> Login </Link>
+        <Link className='nav-offers btn btn-nav text-black' to="/offers"> Offers </Link>
+      </Nav>
+        </Container>
+      </Navbar>
   )
 }
 export default SiteNavbar
