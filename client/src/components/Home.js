@@ -7,7 +7,6 @@ const Home = () => {
 
   const [planets, setPlanets] = useState([])
   const [planetList, setPlanetList] = useState([])
- 
 
   const [isError, setIsError] = useState(false)
 
@@ -15,7 +14,7 @@ const Home = () => {
   useEffect(() => {
   const getPlanets = async () => {
     try {
-    const { data } = await axios.get('/api/planets/') // * <-- replace with your endpoint
+    const { data } = await axios.get('/api/planets') // * <-- replace with your endpoint
     // console.log(data)
       setPlanets(data)
       console.log(data)

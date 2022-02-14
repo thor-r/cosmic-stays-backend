@@ -37,7 +37,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault() // this prevents reload
     try {
-      await axios.post('/api/login', formData)
+      await axios.post('/api/planets/register', formData)
       navigate('/login')
     } catch (err) {
       setFormErrors(err.response.data.errors)
@@ -52,25 +52,25 @@ const Register = () => {
           {/* Username */}
           <Form.Group className='mb-2'>
             <Form.Label htmlFor='username'>Username</Form.Label>
-            <Form.Control onChange={handleChange} type="text" name="username" placeholder="Username" defaultValue={formData.username} />
+            <Form.Control onChange={handleChange} type="text" name="username" placeholder="Username" value={formData.username} />
             {formErrors.username && <Form.Text>{formErrors.username}</Form.Text>}
           </Form.Group>
           {/* Email */}
           <Form.Group className='mb-2'>
             <Form.Label htmlFor="email">Email Address</Form.Label>
-            <Form.Control onChange={handleChange} type="email" name="email" placeholder="Email" defaultValue={formData.email} />
+            <Form.Control onChange={handleChange} type="email" name="email" placeholder="Email" value={formData.email} />
             {formErrors.email && <Form.Text>{formErrors.email}</Form.Text>}
           </Form.Group>
           {/* Password */}
           <Form.Group className='mb-2'>
             <Form.Label htmlFor="password">Password</Form.Label>
-            <Form.Control onChange={handleChange} type="password" name="password" placeholder="Password" defaultValue={formData.password} />
+            <Form.Control onChange={handleChange} type="password" name="password" placeholder="Password" value={formData.password} />
             {formErrors.password && <Form.Text>{formErrors.password}</Form.Text>}
           </Form.Group>
           {/* Password Confirmation */}
           <Form.Group className='mb-2'>
             <Form.Label htmlFor="passwordConfirmation">Confirm Password</Form.Label>
-            <Form.Control onChange={handleChange} type="password" name="passwordConfirmation" placeholder="Confirm Password" defaultValue={formData.passwordConfirmation} />
+            <Form.Control onChange={handleChange} type="password" name="passwordConfirmation" placeholder="Confirm Password" value={formData.passwordConfirmation} />
             {formErrors.passwordConfirmation && <Form.Text>{formErrors.passwordConfirmation}</Form.Text>}
           </Form.Group>
           {/* Submit */}

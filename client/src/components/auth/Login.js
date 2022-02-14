@@ -31,11 +31,11 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault() // prevent reload
     try {
-      const { data } = await axios.post('api/login', formData)
+      const { data } = await axios.post('api/planets/login', formData)
       // Redirect using the navigate variable, passing in the route we want to redirect to
       console.log('token', data.token)
       setTokenToLocalStorage(data.token) // Set token to local storage
-      navigate('/Home') // Navigating to homepage
+      navigate('/') // Navigating back to homepage
     } catch (err) {
       console.log(err.response)
       setFormError(err.response.data.message)
