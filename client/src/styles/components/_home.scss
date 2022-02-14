@@ -2,3 +2,41 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // background: black;
+}
+.title {
+  margin-top: 90px;
+  text-align: center;
+  color: antiquewhite;
+}
+
+.planetsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 160px;
+}
+
+.Pluto {
+  img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.Moon {
+  img {
+    width: 185px;
+    height: 135px;
+  }
+}
+

@@ -33,6 +33,7 @@ const planetSchema = new Schema({
   moons: [{ type: String }],
   owner: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
   isReal: { type: Boolean, required: true },
+  image: { type: String },
 })
 
 // virtual average rating field

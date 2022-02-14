@@ -1,0 +1,20 @@
+.nav-style {
+  display: grid;
+  grid-template-columns: 12fr 2fr 2fr 2fr 2fr;
+  align-items: end;
+  width: 90%;
+  margin-top: 8px;
+}
+
+.btn-nav {
+  margin-right: 25px;
+}
+
+.btn-logo{
+  margin-left: 25px;
+}
+
+.nav-offers {
+  // margin-left: 10px;
+  margin-right: -80px;
+}

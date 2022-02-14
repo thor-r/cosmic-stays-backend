@@ -19,6 +19,7 @@ export default [
       rating: '3',
       owner: '000000000004',
     }],
+    image: 'https://i.imgur.com/rFq243m.png',
   },
 
   {
@@ -31,6 +32,7 @@ export default [
     thingsToDo: 'Rock climbing. Thermal hot springs. Observing the sun',
     offers: 'Book now and get upgraded to a Sun-view room',
     isReal: true,
+    image: 'https://i.imgur.com/RkH8iD5.png',
   },
 
   {
@@ -43,6 +45,7 @@ export default [
     thingsToDo: 'Tour the multiude of Volcanoes and lava spirals from your exposure craft',
     offers: 'Breakfast included',
     isReal: true,
+    image: 'https://i.imgur.com/GH9NFnO.png',
   },
 
   {
@@ -55,6 +58,7 @@ export default [
     thingsToDo: 'People watching',
     offers: 'Buy one week, stay a second week free.',
     isReal: true,
+    image: 'https://i.imgur.com/pjL2Nzr.png',
   },
 
   {
@@ -73,6 +77,7 @@ export default [
       rating: '3',
       owner: '000000000002',
     } ],
+    image: 'https://i.imgur.com/fY3xshZ.png',
   },
 
   {
@@ -85,6 +90,7 @@ export default [
     dangerLevel: 9,
     thingsToDo: 'Exposure Craft tour of the planets liquid hydrogen surface',
     isReal: true,
+    image: 'https://i.imgur.com/4YaIfVQ.png',
   },
 
   {
@@ -98,6 +104,7 @@ export default [
     thingsToDo: 'Windsurfing, sailing, flying a kite, Metal-detecting',
     offers: 'Guided day tour to the rings included',
     isReal: true,
+    image: 'https://i.imgur.com/OzZSV0H.png',
   },
 
   {
@@ -111,6 +118,7 @@ export default [
     thingsToDo: 'Skiing, ice skating and the luge. Due to host the winter olympics in 6533',
     offers: 'Ski-in Ski out upgrade',
     isReal: true,
+    image: 'https://i.imgur.com/HGL5Av4.png',
   },
   {
     name: 'Neptune', 
@@ -123,6 +131,7 @@ export default [
     thingsToDo: 'Skiing. Neptunes moon Triton is also worth a visit',
     offers: 'Free daytrip to Triton ',
     isReal: true,
+    image: 'https://i.imgur.com/gc4eNyK.png',
   },
   {
     name: 'Pluto', 
@@ -136,6 +145,7 @@ export default [
     thingsToDo: 'Visit the heart-shaped indendation on the planets surface! The cause of Plutos unusal orbit',
     offers: 'Free kinetic socks on successfull booking',
     isReal: true,
+    image: 'https://i.imgur.com/1yelOoh.png',
   },
   {
     name: 'Arrakis',

@@ -5,7 +5,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import SiteNavbar from './components/SiteNavbar'
 import Home from './components/Home'
 import Footer from './components/Footer'
-
+import Login from './components/auth/Login'
+import Register from './components/auth/Register'
+import Offers from './components/Offers'
 
 function App() {
   return (
@@ -16,10 +18,12 @@ function App() {
       <Routes>
 
         <Route path="/" element = {<Home />} />
-        {/* <Route path="/login" element = {<Login />} /> */}
-        {/* <Route path="/register" element = {<Register />} /> */}
+        <Route path="/login" element = {<Login />} />
+        <Route path="/register" element = {<Register />} />
+        <Route path="/offers" element = {<Offers />} />
+      
         {/* <Route path="/profile" element = {<Profile />} /> */}
-        {/* <Route path="/offers" element = {<Offers />} /> */}
+  
         {/* <Route path="/planet/:id element = {<ShowPlanet />} /> */}
 
       </Routes>
