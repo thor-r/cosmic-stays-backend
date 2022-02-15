@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import Login from './components/auth/Login'
 import Register from './components/auth/Register'
 import Offers from './components/Offers'
+import PlanetDetails from './components/PlanetDetails'
 
 function App() {
   return (
@@ -21,9 +22,9 @@ function App() {
         <Route path="/login" element = {<Login />} />
         <Route path="/register" element = {<Register />} />
         <Route path="/offers" element = {<Offers />} />
+        <Route path="/planets/:planetId" element = {<PlanetDetails />} />
       
         {/* <Route path="/profile" element = {<Profile />} /> */}
-  
         {/* <Route path="/planet/:id element = {<ShowPlanet />} /> */}
 
       </Routes>
