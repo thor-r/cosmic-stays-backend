@@ -34,7 +34,7 @@ router.route('/planets/register')
 router.route('/planets/login')
   .post(loginUser)
 
-router.route('/planets/profile')
+router.route('/profile')
   .get(secureRoute, getProfile)
 
 router.route('/offers')  

@@ -14,6 +14,7 @@ const userSchema = new Schema({
 
 // Hide Password when pulling out user information for reviews 
 userSchema.set('toJSON', {
+  virtuals: true, 
   transform(_doc, json){
     delete json.password
     return json
@@ -25,6 +26,14 @@ userSchema
   .virtual('passwordConfirmation')
   .set(function(passwordConfirmation){
     this._passwordConfirmation = passwordConfirmation
+  })
+
+//Creating Review Virtual Field 
+userSchema
+  .virtual('reviewedPlanet', {
+    ref: 'Planet', 
+    localField: '_id',
+    foreignField: 'review',
   })
 
 // Creating WishList Virtual Field
