@@ -5,18 +5,18 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
+  // width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-  // background: black;
+  background: grey;
+  overflow: scroll;
 }
+
 .title {
   margin-top: 90px;
   text-align: center;
-  color: antiquewhite;
+  color: white;
 }
 
 .planetsContainer {
@@ -24,18 +24,50 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 160px;
+  // max-width: 150%;
+}
+
+.planet-div {
+  position: relative;
+  display: block;
+  flex: 1 1 0px;
+  transition: transform 500ms;
+}
+
+.planetsContainer:focus-within .planet-div,
+.planetsContainer:hover .planet-div {
+  transform: translateX(-25%);
+}
+
+.planet-div:focus ~ .planet-div,
+.planet-div:hover ~ .planet-div {
+  transform: translateX(25%);
+}
+
+.planetsContainer .planet-div:focus,
+.planetsContainer .planet-div:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+.planet-div img {
+  display: block;
+  // max-width: 150%;
+  width: 400px;
+  height: 300px;
+  margin-right: 20px;
 }
 
 .Pluto {
   img {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 120px;
   }
 }
 
 .Moon {
   img {
-    width: 185px;
+    width: 200px;
     height: 135px;
   }
 }

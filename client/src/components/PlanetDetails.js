@@ -16,7 +16,7 @@ const { planetId } = useParams()
     const getSinglePlanet = async () => {
       try {
         const { data } = await axios.get(`/api/planets/${planetId}`)
-        setPlanet(data.data)
+        setPlanet(data)
         console.log(data)
       } catch (err) {
         setHasError({ error: true, message: err.message })
@@ -62,15 +62,15 @@ const { planetId } = useParams()
 
       { planet &&
       <div className='planet-reviews'>
+        <h4>Planet Reviews</h4>
         {planet.reviews.map(review => {
           console.log(review)
           return <div key={review._id}>
-            <h4>Planet Reviews</h4>
-            <p>{`Rating: ${review.rating} Reviewed by: ${review.owner.username}`}</p>
-            <p>{review.text}</p>
+            <p>{`Rating: ${review.rating} By: ${review.owner.username} Review ${review.text}`}</p>
           </div>
         })}
       </div> }
+      <Link to="/booking">Go Here</Link>
     </Container>
   )
 }

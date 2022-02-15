@@ -20,7 +20,6 @@ export default [
       owner: '000000000004',
     }],
     image: 'https://i.imgur.com/rFq243m.png',
-    imageGallery: [],
   },
 
   {
@@ -28,12 +27,11 @@ export default [
     planetOverview: 'Red hot rocky planet a stones throw from the sun. Bring a warm blanket for the night though',
     distanceFromEarth: '130 Million km',
     travelTime: '40 days',
-    temperature: 'Day: 430 degrees celcius Night: -180 degrees celcius',
+    temperature: 'Day: 430 degrees celcius Night: -180 dgrees celcius',
     dangerLevel: 9,
     thingsToDo: 'Rock climbing. Thermal hot springs. Observing the sun',
     offers: 'Book now and get upgraded to a Sun-view room',
     isReal: true,
-    reviews: [],
     image: 'https://i.imgur.com/RkH8iD5.png',
     imageGallery: ['https://i.imgur.com/QdW04nk.jpeg','https://i.imgur.com/5yKSgdB.jpeg','https://i.imgur.com/sKhd5IP.jpeg','https://i.imgur.com/vtirW0B.jpeg'],
   },
@@ -48,10 +46,7 @@ export default [
     thingsToDo: 'Tour the multiude of Volcanoes and lava spirals from your exposure craft',
     offers: 'Breakfast included',
     isReal: true,
-    reviews: [],
     image: 'https://i.imgur.com/GH9NFnO.png',
-    imageGallery: [],
-    
   },
 
   {
@@ -64,9 +59,7 @@ export default [
     thingsToDo: 'People watching',
     offers: 'Buy one week, stay a second week free.',
     isReal: true,
-    reviews: [],
     image: 'https://i.imgur.com/pjL2Nzr.png',
-    imageGallery: [],
   },
 
   {
@@ -99,7 +92,6 @@ export default [
     dangerLevel: 9,
     thingsToDo: 'Exposure Craft tour of the planets liquid hydrogen surface',
     isReal: true,
-    reviews: [],
     image: 'https://i.imgur.com/4YaIfVQ.png',
     imageGallery: ['https://i.imgur.com/MXk69ws.jpeg','https://i.imgur.com/AoHPgUY.jpeg','https://i.imgur.com/RFxyGP3.jpeg','https://i.imgur.com/yLlmSf6.jpeg'],
   },
@@ -115,9 +107,7 @@ export default [
     thingsToDo: 'Windsurfing, sailing, flying a kite, Metal-detecting',
     offers: 'Guided day tour to the rings included',
     isReal: true,
-    reviews: [],
     image: 'https://i.imgur.com/OzZSV0H.png',
-    imageGallery: [],
   },
 
   {
@@ -131,9 +121,7 @@ export default [
     thingsToDo: 'Skiing, ice skating and the luge. Due to host the winter olympics in 6533',
     offers: 'Ski-in Ski out upgrade',
     isReal: true,
-    reviews: [],
     image: 'https://i.imgur.com/HGL5Av4.png',
-    imageGallery: [],
   },
   {
     name: 'Neptune', 
@@ -146,7 +134,6 @@ export default [
     thingsToDo: 'Skiing. Neptunes moon Triton is also worth a visit',
     offers: 'Free daytrip to Triton ',
     isReal: true,
-    reviews: [],
     image: 'https://i.imgur.com/gc4eNyK.png',
     imageGallery: ['https://i.imgur.com/vC2W47N.jpeg', 'https://i.imgur.com/8v5d4BA.jpeg'],
   },
@@ -162,9 +149,7 @@ export default [
     thingsToDo: 'Visit the heart-shaped indendation on the planets surface! The cause of Plutos unusal orbit',
     offers: 'Free kinetic socks on successfull booking',
     isReal: true,
-    reviews: [],
     image: 'https://i.imgur.com/1yelOoh.png',
-    imageGallery: [],
   },
   {
     name: 'Arrakis',
@@ -178,7 +163,6 @@ export default [
     thingsToDo: 'Relax from one of the few grand Empirial compounds, or go Worm-watching from the saftey of the sky!',
     offers: 'Two Stillsuits for the price of one',
     isReal: false,
-    reviews: [],
   },
   {
     name: 'Endor',
@@ -192,7 +176,6 @@ export default [
     thingsToDo: 'Tear through the endless forests on a speederbike',
     offers: 'Free trip to the Destroyed Shield Generator Museum',
     isReal: false,
-    reviews: [],
   },
   {
     name: 'Krpton',
@@ -205,7 +188,6 @@ export default [
     dangerLevel: 2,
     thingsToDo: 'Take your pick in exploring some one of the most advanced technologial societies in the universe',
     isReal: false,
-    reviews: [],
   },
   {
     name: 'Trantor',
@@ -230,7 +212,6 @@ export default [
     dangerLevel: 10,
     thingsToDo: 'Observe the unusual movements and formations in the ocean, also observe strange behaviour in each other.',
     isReal: false,
-    reviews: [],
   },
   {
     name: 'Coroscant',
@@ -243,7 +224,6 @@ export default [
     dangerLevel: 7,
     thingsToDo: 'Tour the skyline on a cruiser or deep dive into one of the thousands of bars, home to explosive night-life',
     isReal: true,
-    reviews: [],
   }
  
 ]

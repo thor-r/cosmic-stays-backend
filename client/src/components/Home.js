@@ -36,8 +36,8 @@ const Home = () => {
       {planets.map((planet, i) => {
           if (i <= 9) {
             return (
-              <Link id='character-link' to={`/planets/${planet.id}`}>
-              <div className={planet.name} key={i} value={i}>
+              <Link id='planet-link' to={`/planets/${planet.id}`}>
+              <div className={`planet-div ${planet.name}`} key={i} value={i}>
                 <img src={planet.image} alt={planet.name} />
               </div>
               </Link>
@@ -46,7 +46,6 @@ const Home = () => {
           console.log("no matching planets")
         }
         })}
-
       </div>
     </>
   )
