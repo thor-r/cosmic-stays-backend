@@ -26,27 +26,52 @@ const { planetId } = useParams()
 
   },[planetId])
 
+  
   return(
-    <Container className="mt-4">
-      <div className='planet-details'>
-        <h2>{planet.name}</h2>
-        <hr/>
-        <h4>{`${planet.planetOverview}`}</h4>
-        <hr/>
-        <h4>{`Distance from Earth: ${planet.distanceFromEarth}`}</h4>
-        <hr/>
-        <h4>{`Travel Time: ${planet.travelTime}`}</h4>
-        <hr/>
-        <h4>{`Current Temperature: ${planet.temperature}`}</h4>
-        <hr/>
-        <h4>{`Things to Do: ${planet.thingsToDo}`}</h4>
-        <hr/>
-        <h4>{`Danger Level: ${planet.dangerLevel}`}</h4>
-        <hr/>
-        <h4>{`Average Rating: ${planet.avgRating}`}</h4>
-      </div>
+    <Container className="mt-2">
+      <div className= "card-and-pics">
+        {planet && 
+        <div className='planet-details'>
+          <h1>{planet.name}</h1>
+          <hr/>
+          <h4>{planet.planetOverview}</h4>
+          <hr/>
+          <h6>{`Distance from Earth: ${planet.distanceFromEarth}`}</h6>
+          <hr/>
+          <h6>{`Travel Time: ${planet.travelTime}`}</h6>
+          <hr/>
+          <h6>{`Current Temperature: ${planet.temperature}`}</h6>
+          <hr/>
+          <h6>{`Things to Do: ${planet.thingsToDo}`}</h6>
+          <hr/>
+          <h6>{`Danger Level: ${planet.dangerLevel}`}</h6>
+          <hr/>
+          <h6>{`Average Rating: ${planet.avgRating}`}</h6>
+        </div> }
+
+      { planet &&
+      <div className='planet-images'>
+        {planet.imageGallery.map(image => {
+          console.log(image)
+        return <div>
+        <img className="image" src={image} alt= "Planet" />
+        </div>
+        })}
+      </div>}
+    </div>
+
+      { planet &&
+      <div className='planet-reviews'>
+        {planet.reviews.map(review => {
+          console.log(review)
+          return <div key={review._id}>
+            <h4>Planet Reviews</h4>
+            <p>{`Rating: ${review.rating} Reviewed by: ${review.owner.username}`}</p>
+            <p>{review.text}</p>
+          </div>
+        })}
+      </div> }
     </Container>
   )
 }
-
 export default PlanetDetails
