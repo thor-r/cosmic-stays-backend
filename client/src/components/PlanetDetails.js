@@ -8,6 +8,7 @@ const PlanetDetails = () => {
 
 const [ planet, setPlanet ] = useState(null)
 const [ hasError, setHasError ] = useState({ error: false, message: '' })
+const [ image, setImage ] = useState("")
 
 const { planetId } = useParams()
 
@@ -36,17 +37,18 @@ const { planetId } = useParams()
           <hr/>
           <h4>{planet.planetOverview}</h4>
           <hr/>
-          <h6>{`Distance from Earth: ${planet.distanceFromEarth}`}</h6>
+          <h6>Distance from Earth: <span class="info">{planet.distanceFromEarth}</span></h6>
           <hr/>
-          <h6>{`Travel Time: ${planet.travelTime}`}</h6>
+          <h6>Travel Time: <span class="info">{planet.travelTime}</span></h6>
           <hr/>
-          <h6>{`Current Temperature: ${planet.temperature}`}</h6>
+          <h6>Current Temperature: <span class="info">{planet.temperature}</span></h6>
           <hr/>
-          <h6>{`Things to Do: ${planet.thingsToDo}`}</h6>
+          <h6>Things to Do: <span class="info">{planet.thingsToDo}</span></h6>
           <hr/>
-          <h6>{`Danger Level: ${planet.dangerLevel}`}</h6>
+          <h6>Danger Level: <span class="info">{planet.dangerLevel}</span></h6>
           <hr/>
-          <h6>{`Average Rating: ${planet.avgRating}`}</h6>
+          <h6>Average Rating: <span class="info">{planet.avgRating}</span></h6>
+          <Link className='btn btn-book' to="/booking">Travel</Link>
         </div> }
 
       { planet &&
@@ -54,11 +56,17 @@ const { planetId } = useParams()
         {planet.imageGallery.map(image => {
           console.log(image)
         return <div>
-        <img className="image" src={image} alt= "Planet" />
+        <img className="image" onClick={() => setImage(image)} src={image} alt= "planet"/>
         </div>
         })}
+        </div>}
+      </div>
+
+      {image &&  
+      <div className="spotlight-container" onClick={() => setImage(null)}>
+        <img className="spotlight-image" src={image} alt="planet"/>
       </div>}
-    </div>
+
 
       { planet &&
       <div className='planet-reviews'>
@@ -66,12 +74,17 @@ const { planetId } = useParams()
         {planet.reviews.map(review => {
           console.log(review)
           return <div key={review._id}>
-            <p>{`Rating: ${review.rating} By: ${review.owner.username} Review ${review.text}`}</p>
+            <div className='review-box'>
+            {review.owner.username} <br></br> {review.text} <br></br> <br></br>Rating : {review.rating}
+            </div>
           </div>
         })}
       </div> }
-      <Link to="/booking">Go Here</Link>
+
+    
+      <Link to={`/planets/${planetId}/reviews/`}> <button className='review-btn'>Add Review</button> </Link>
     </Container>
+    
   )
 }
 export default PlanetDetails

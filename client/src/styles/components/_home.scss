@@ -6,17 +6,26 @@ body {
   margin: 0;
   padding: 0;
   // width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   background: grey;
   overflow: scroll;
+  background: url('https://i.imgur.com/nwn7Kc2.jpeg') center;
+  background-size: fill;
+  background-repeat:repeat-x;
 }
 
 .title {
   margin-top: 90px;
   text-align: center;
   color: white;
+  background: url('https://i.imgur.com/BQWp0cc.png') center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  h1 {
+    opacity: 0;
+  }
 }
 
 .planetsContainer {
@@ -60,8 +69,11 @@ body {
 
 .Pluto {
   img {
-    width: 140px;
-    height: 120px;
+    width: 120px;
+    height: 110px;
+    margin-top: 80px;
+    margin-right: 40px;
+
   }
 }
 
@@ -69,6 +81,33 @@ body {
   img {
     width: 200px;
     height: 135px;
+    margin-top: 80px;
   }
+}
+
+.hover-info {
+opacity: 0;
+position: absolute;
+width: 250px;
+height: 200px;
+color: #fff;
+padding: 0.75em 1em;
+font-weight: lighter;
+z-index: 2;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+background-color: rgba(0,0,0,.7);
+-webkit-transition: opacity .3s ease-in-out;
+transition: opacity .3s ease-in-out;
+border-radius: 30px;
+}
+
+.hover-info:hover {
+  opacity: 1;
+  background-color: black;
+}
+
+img:hover .hover-info {
+  opacity: 1;
 }
 

@@ -11,6 +11,7 @@ import Offers from './components/Offers'
 import Profile from './components/Profile'
 import PlanetDetails from './components/PlanetDetails'
 import Booking from './components/Booking'
+import Reviews from './components/Reviews'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/offers" element = {<Offers />} />
         <Route path="/profile" element = {<Profile />} />
         <Route path="/planets/:planetId" element = {<PlanetDetails />} />
+        <Route path="/planets/:planetId/reviews" element = {<Reviews />} />
         <Route path="/booking" element = {<Booking />} />
   
         {/* <Route path="/planet/:id element = {<ShowPlanet />} /> */}

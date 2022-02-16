@@ -39,7 +39,8 @@ const Booking = () => {
   }
 
   return (
-    <main className='booking-section'>
+    <div className='booking-parent'>
+    <div className='booking-section'>
       <form onSubmit={handleSubmit}>
         <div className='field'>
           <label className='label'>Email</label>
@@ -91,8 +92,8 @@ const Booking = () => {
 
         <div className='field'>
           <label className='checkbox label'>
-            Cryo Sleep
-            <input
+            Cryogenic Sleep Required 
+            <input 
             type="checkbox"
             name="cryoSleep"
             checked={bookingData.cryoSleep}
@@ -100,16 +101,11 @@ const Booking = () => {
             />
           </label>
         </div>
-
-      
+        <Button type="button" class="btn btn-dark">Confirm</Button>
       </form>
-    </main>
+    </div>
+    </div>
   )
-
-
-
-
-
 
 }
 
