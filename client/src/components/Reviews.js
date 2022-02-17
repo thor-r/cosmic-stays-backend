@@ -50,14 +50,20 @@ const Review = () => {
 
   return (
     <> 
-    <form onSubmit={handleSubmit}>
+    <form className='review-form' onSubmit={handleSubmit}>
 
-        <label>
-          Review
-          <input name='text' type="text" value={formData.text} onChange={handleChange} /> 
-          <input name='rating' onChange={handleChange} type="number" placeholder="1" value={formData.rating} />
-        </label>
-        <input type="submit" value="Submit" />
+          <label>Rate your Visit</label>
+          <input className='rating-input' name='rating' onChange={handleChange} type="number" placeholder="1" min='1' max='5' value={formData.rating} />
+
+          <br></br>
+
+          <label>Review </label>
+          <input className='text-input' name='text' type="text" value={formData.text} onChange={handleChange} /> 
+        
+
+        <br></br>
+
+        <input className='submit-input' type="submit" value="Submit" />
     </form>
 
   </>

@@ -49,6 +49,7 @@ const Register = () => {
       <Container>
         <Form onSubmit={handleSubmit} className='mt-4'>
           <h2>Register</h2>
+          <div className='wrapper'>
           {/* Username */}
           <Form.Group className='mb-2'>
             <Form.Label htmlFor='username'>Username</Form.Label>
@@ -75,8 +76,9 @@ const Register = () => {
           </Form.Group>
           {/* Submit */}
           <Form.Group className='text-center mt-4'>
-            <Button variant="warning" type="submit">Submit</Button>
+            <Button variant="info" className='button' type="submit">Submit</Button>
           </Form.Group>
+          </div>
         </Form>
       </Container>
     </div>

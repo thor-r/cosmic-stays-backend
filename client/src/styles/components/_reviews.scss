@@ -1,0 +1,38 @@
+.review-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+  align-items: center;
+  height: 650px;
+  width: 550px;
+  margin-left: 550px;
+  border-radius: 20px;
+  border: 3px solid #8980F5;
+  // background: rgb(85,85,255);
+  // background: linear-gradient(90deg, rgba(85,85,255,1) 35%, rgba(0,212,255,1) 100%);
+  background: url('https://i.imgur.com/NJXbb2E.jpeg') center;
+  background-size: 100%;
+  padding-top: 90px;
+}
+
+.text-input {
+  margin-right: 20px;
+  width: 420px;
+  height: 250px;
+}
+
+.rating-input {
+  width: 80px;
+}
+
+.submit-input {
+  width: 100px;
+  height: 40px;
+}
+
+label {
+  margin-bottom: 5px;
+  color: white;
+  font-weight: 400;
+}
