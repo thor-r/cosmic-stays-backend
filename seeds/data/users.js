@@ -11,7 +11,7 @@ export default [
     email: 'neil@email.com',
     password: 'pass',
     passwordConfirmation: 'pass',
-    _id: '000000000001',
+    // _id: '000000000001',
   },
 
   {
@@ -19,7 +19,7 @@ export default [
     email: 'matt@email.com',
     password: 'pass',
     passwordConfirmation: 'pass',
-    _id: '000000000002',
+    // _id: '000000000002',
   },
 
   {
@@ -27,7 +27,7 @@ export default [
     email: 'elon@email.com',
     password: 'pass',
     passwordConfirmation: 'pass',
-    _id: '000000000003',
+    // _id: '000000000003',
   },
 
   {
@@ -35,7 +35,7 @@ export default [
     email: 'buzz@email.com',
     password: 'pass',
     passwordConfirmation: 'pass',
-    _id: '000000000004',
+    // _id: '000000000004',
   },
 
   {
@@ -43,7 +43,7 @@ export default [
     email: 'king@email.com',
     password: 'pass',
     passwordConfirmation: 'pass',
-    _id: '000000000005',
+    // _id: '000000000005',
   },
 
   {

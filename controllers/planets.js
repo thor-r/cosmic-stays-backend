@@ -4,7 +4,7 @@ import Planet from '../models/planet.js'
 // Get all the Planet 
 export const getAllPlanets = async (req, res) => {
   try {
-    const allPlanets = await Planet.find().populate('owner')
+    const allPlanets = await Planet.find().populate('owner').populate('reviews').populate('reviews.owner')
     return res.status(200).json(allPlanets)
   } catch (error) {
     console.log(error)
@@ -16,7 +16,7 @@ export const getAllPlanets = async (req, res) => {
 export const getPlanet = async (req, res) => {
   try {
     const { id } = req.params
-    const getPlanet = await Planet.findById(id).populate('owner').populate('reviews')
+    const getPlanet = await Planet.findById(id).populate('owner').populate('reviews').populate('reviews.owner')
     return res.status(200).json(getPlanet)
   } catch (error) {
     return res.status(404).json({ message: 'Planet not Found' })

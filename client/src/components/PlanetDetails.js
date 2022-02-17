@@ -123,7 +123,7 @@ const { planetId } = useParams()
           console.log(review)
           return <div key={review._id}>
             <div className='review-box'>
-            <span className='user'>{review.owner.username}</span><span className='rating'>Rating : {review.rating}</span> <br></br><br></br> <span className='review-text'><em>{review.text}</em></span>
+            <span className='user'>{review.owner.username}</span><span className='rating'>Rating:{review.rating}</span> <br></br><br></br> <span className='review-text'><em>{review.text}</em></span>
             </div>
           </div>
         })}
