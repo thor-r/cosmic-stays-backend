@@ -34,7 +34,7 @@ const Home = () => {
 
       <div className='planetsContainer'>
       {planets.map((planet, i) => {
-          if (i <= 9) {
+          if (planet.isReal === true && i <= 9) {
             return (
               <Link id='planet-link' to={`/planets/${planet.id}`}>
               <div className={`planet-div ${planet.name}`} key={i} value={i}>

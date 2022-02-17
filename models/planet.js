@@ -8,7 +8,7 @@ const { Schema } = mongoose
 
 const reviewSchema = new Schema({
   text: { type: String, required: true, maxlength: 300 },
-  rating: { type: Number, required: true, min: 1, max: 10 },
+  rating: { type: Number, required: true, min: 1, max: 5 },
   owner: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
 }, {
   timestamps: true,

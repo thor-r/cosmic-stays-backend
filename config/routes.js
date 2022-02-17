@@ -5,7 +5,7 @@ import express from 'express'
 import { secureRoute } from './secureRoute.js'
 
 // Import Functionality from controllers 
-import { getAllPlanets, getPlanet, updatePlanet, deletePlanet, postReview, deleteReview, getOffers } from '../controllers/planets.js'
+import { getAllPlanets, getPlanet, updatePlanet, deletePlanet, postReview, deleteReview, getOffers, addWishList } from '../controllers/planets.js'
 import { loginUser, registerUser } from '../controllers/auth.js'
 import { getProfile } from '../controllers/users.js'
 
@@ -21,6 +21,7 @@ router.route('/planets/:id')
   .get(getPlanet)
   .put(secureRoute, updatePlanet)
   .delete(secureRoute, deletePlanet)
+  .post(addWishList)
 
 router.route('/planets/:id/reviews')
   .post(secureRoute, postReview)

@@ -7,6 +7,7 @@ export const getAllPlanets = async (req, res) => {
     const allPlanets = await Planet.find().populate('owner')
     return res.status(200).json(allPlanets)
   } catch (error) {
+    console.log(error)
     return res.status(404).json({ message: error.message })
   }
 }
@@ -15,7 +16,7 @@ export const getAllPlanets = async (req, res) => {
 export const getPlanet = async (req, res) => {
   try {
     const { id } = req.params
-    const getPlanet = await Planet.findById(id).populate('owner').populate('reviews.owner')
+    const getPlanet = await Planet.findById(id).populate('owner').populate('reviews')
     return res.status(200).json(getPlanet)
   } catch (error) {
     return res.status(404).json({ message: 'Planet not Found' })
@@ -106,5 +107,14 @@ export const getOffers = async (req, res) => {
     
   } catch (error) {
     return res.status(404).json({ message: 'Offers not Found' })
+  }
+}
+
+export const addWishList = async (req, res) => {
+  try {
+    const { id } = req.params
+    console.log(id)
+  } catch (error) {
+    return res.status(404).json({ message: 'WishList Invalid' })
   }
 }
