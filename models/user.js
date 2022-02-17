@@ -34,19 +34,21 @@ userSchema
     ref: 'Planet', 
     localField: '_id',
     foreignField: 'reviews.owner',
-    // get: function(res){
-    //   let matchedReviews = []
-    //   res.forEach(re => {
-    //     matchedReviews = [ 
-    //       ...matchedReviews, 
-    //       ...re.reviews.filter(r => r.owner.equals(this._id)).map(r => {
-    //         r._doc.planet = re._id
-    //         return r
-    //       })
-    //     ]
-    //   })
-    //   return matchedReviews
-    // },
+    get: function(res){
+      let matchedReviews = []
+      if (res) {
+        res.forEach(re => {
+          matchedReviews = [ 
+            ...matchedReviews, 
+            ...re.reviews.filter(r => r.owner.equals(this._id)).map(r => {
+              r._doc.planet = re._id
+              return r
+            })
+          ]
+        }) 
+      }
+      return matchedReviews
+    },
 
     // get: function(reviewedPlanet){
     //   console.log(reviewedPlanet)

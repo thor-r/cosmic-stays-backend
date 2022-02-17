@@ -1,6 +1,52 @@
 export default [
   {
+    name: 'Mercury', 
+    planetPosition: 1,
+    planetOverview: 'Red hot rocky planet a stones throw from the sun. Bring a warm blanket for the night though',
+    distanceFromEarth: '130 Million km',
+    travelTime: '40 days',
+    temperature: 'Day: 430 degrees celcius Night: -180 dgrees celcius',
+    dangerLevel: 9,
+    thingsToDo: 'Rock climbing. Thermal hot springs. Observing the sun',
+    offers: 'Book now and get upgraded to a Sun-view room',
+    isReal: true,
+    image: 'https://i.imgur.com/RkH8iD5.png',
+    imageGallery: ['https://i.imgur.com/QdW04nk.jpeg','https://i.imgur.com/5yKSgdB.jpeg','https://i.imgur.com/sKhd5IP.jpeg','https://i.imgur.com/vtirW0B.jpeg'],
+  },
+
+  {
+    name: 'Venus', 
+    planetPosition: 2,
+    planetOverview: 'Venus! The third brightest planet in our solar system, HOT..bring thermalpaste. Great if you like your volcanoes very active, and your toast very crisp',
+    distanceFromEarth: '59 Million km',
+    travelTime: '109 days',
+    temperature: '475 degrees celcius.',
+    dangerLevel: 9,
+    thingsToDo: 'Tour the multiude of Volcanoes and lava spirals from your exposure craft',
+    offers: 'Breakfast included',
+    isReal: true,
+    image: 'https://i.imgur.com/GH9NFnO.png',
+    imageGallery: ['https://i.imgur.com/ORyukDr.jpg','https://i.imgur.com/AeV0X9V.jpg','https://i.imgur.com/lSUWm5c.jpg','https://i.imgur.com/mk9Ab0N.jpg'],
+  },
+
+  {
+    name: 'Earth', 
+    planetPosition: 3,
+    planetOverview: 'Lots of wildlife',
+    distanceFromEarth: '0',
+    travelTime: '0 days',
+    temperature: 'Average 20 degrees celcuis',
+    dangerLevel: 2,
+    thingsToDo: 'People watching',
+    offers: 'Buy one week, stay a second week free.',
+    isReal: true,
+    image: 'https://i.imgur.com/pjL2Nzr.png',
+    imageGallery: ['https://i.imgur.com/Uc4X8b7.jpg'],
+  },
+
+  {
     name: 'Moon', 
+    planetPosition: 4,
     planetOverview: 'The short haul weekend destination for residents of earth. Lacks the atmosphere of other destinations',
     distanceFromEarth: '384 Thousand km',
     travelTime: '3 days',
@@ -23,49 +69,8 @@ export default [
   },
 
   {
-    name: 'Mercury', 
-    planetOverview: 'Red hot rocky planet a stones throw from the sun. Bring a warm blanket for the night though',
-    distanceFromEarth: '130 Million km',
-    travelTime: '40 days',
-    temperature: 'Day: 430 degrees celcius Night: -180 dgrees celcius',
-    dangerLevel: 9,
-    thingsToDo: 'Rock climbing. Thermal hot springs. Observing the sun',
-    offers: 'Book now and get upgraded to a Sun-view room',
-    isReal: true,
-    image: 'https://i.imgur.com/RkH8iD5.png',
-    imageGallery: ['https://i.imgur.com/QdW04nk.jpeg','https://i.imgur.com/5yKSgdB.jpeg','https://i.imgur.com/sKhd5IP.jpeg','https://i.imgur.com/vtirW0B.jpeg'],
-  },
-
-  {
-    name: 'Venus', 
-    planetOverview: 'Venus! The third brightest planet in our solar system, HOT..bring thermalpaste. Great if you like your volcanoes very active, and your toast very crisp',
-    distanceFromEarth: '59 Million km',
-    travelTime: '109 days',
-    temperature: '475 degrees celcius.',
-    dangerLevel: 9,
-    thingsToDo: 'Tour the multiude of Volcanoes and lava spirals from your exposure craft',
-    offers: 'Breakfast included',
-    isReal: true,
-    image: 'https://i.imgur.com/GH9NFnO.png',
-    imageGallery: ['https://i.imgur.com/ORyukDr.jpg','https://i.imgur.com/AeV0X9V.jpg','https://i.imgur.com/lSUWm5c.jpg','https://i.imgur.com/mk9Ab0N.jpg'],
-  },
-
-  {
-    name: 'Earth', 
-    planetOverview: 'Lots of wildlife',
-    distanceFromEarth: '0',
-    travelTime: '0 days',
-    temperature: 'Average 20 degrees celcuis',
-    dangerLevel: 2,
-    thingsToDo: 'People watching',
-    offers: 'Buy one week, stay a second week free.',
-    isReal: true,
-    image: 'https://i.imgur.com/pjL2Nzr.png',
-    imageGallery: ['https://i.imgur.com/Uc4X8b7.jpg'],
-  },
-
-  {
     name: 'Mars', 
+    planetPosition: 5,
     planetOverview: 'Cool and rocky. On Elons wish list',
     distanceFromEarth: '316 Million km',
     alienLife: 'Yes',
@@ -86,6 +91,7 @@ export default [
 
   {
     name: 'Jupiter', 
+    planetPosition: 6,
     planetOverview: 'The King of the solar system. Jupiter, the oldest planet in the solar system is volitile and unforgiving',
     distanceFromEarth: '885.29 million km',
     travelTime: '2 years',
@@ -96,10 +102,12 @@ export default [
     isReal: true,
     image: 'https://i.imgur.com/4YaIfVQ.png',
     imageGallery: ['https://i.imgur.com/MXk69ws.jpeg','https://i.imgur.com/AoHPgUY.jpeg','https://i.imgur.com/RFxyGP3.jpeg','https://i.imgur.com/yLlmSf6.jpeg'],
+    offers: 'Half-Price for Humans 100+ years or older!',
   },
 
   {
     name: 'Saturn', 
+    planetPosition: 7,
     planetOverview: 'With winds of 1000kmh sailing and windsurfing are very popular. Dont play golf though',
     distanceFromEarth: '1.6 billion km',
     travelTime: '8 Years',
@@ -115,6 +123,7 @@ export default [
 
   {
     name: 'Uranus', 
+    planetPosition: 8,
     planetOverview: 'Cold Icy Planet. ',
     distanceFromEarth: '2.9 billion km',
     travelTime: '14 years',
@@ -128,6 +137,7 @@ export default [
   },
   {
     name: 'Neptune', 
+    planetPosition: 9,
     planetOverview: 'Cold Icy Planet like Uranus, except you need to travel an extra 8 nyears to get there. ',
     distanceFromEarth: '4.6 billion km',
     travelTime: '22 years',
@@ -142,6 +152,7 @@ export default [
   },
   {
     name: 'Pluto', 
+    planetPosition: 10,
     planetOverview: 'Your favourite dwarf planet, Pluto lies on the icy edge of the solar system. Do not leave your fission blanket at home!',
     distanceFromEarth: '5.2883 billion km',
     travelTime: '500 years',
@@ -157,6 +168,7 @@ export default [
   },
   {
     name: 'Arrakis',
+    planetPosition: 11,
     planetOverview: 'Dune ...Desert planety - wasteland of the Empire, it is here—and only here—where spice is found',
     alienLife: 'Yes: Fremen',
     cryoSleepRequired: 'Yes',
@@ -170,6 +182,7 @@ export default [
   },
   {
     name: 'Endor',
+    planetPosition: 12,
     planetOverview: 'Secluded in a remote corner of the galaxy, the forest moon of Endor would easily have been overlooked by history were it not for the decisive battle that occurred there. This lush, forest moon is home of the Ewok species',
     alienLife: 'Yes: Ewok',
     cryoSleepRequired: 'Yes',
@@ -183,6 +196,7 @@ export default [
   },
   {
     name: 'Krpton',
+    planetPosition: 13,
     planetOverview: 'Krypton is a planet which orbits a red star. It is home to a great civilization which boasts advanced science and technology.',
     alienLife: 'Yes: Krpytonians',
     cryoSleepRequired: 'Yes',
@@ -192,9 +206,11 @@ export default [
     dangerLevel: 2,
     thingsToDo: 'Take your pick in exploring some one of the most advanced technologial societies in the universe',
     isReal: false,
+    offers: 'Free Glowing Green Rocks for every trip bought!',
   },
   {
     name: 'Trantor',
+    planetPosition: 14,
     planetOverview: 'TRANTOR — The capital of the First Galactic Empire. Its land surface of 200 million square kilometers was entirely domed (except for the Imperial Palace area) and underlaid with an endless city that extended beneath the continental shelves.',
     alienLife: 'Yes',
     cryoSleepRequired: 'Yes',
@@ -203,10 +219,12 @@ export default [
     temperature: '200 degrees above the covered surface',
     dangerLevel: 8,
     thingsToDo: 'Explore the endless multitude of tunnels or take a day trip to the Galactic Palace',
+    offers: 'Buy One trip for the price of Three!',
     isReal: false,
   },
   {
     name: 'Solaris',
+    planetPosition: 15,
     planetOverview: 'An uninhabited and inhospitable world, Solaris is covered by a single massive ocean, though the liquid that constitutes it remains a mystery to scientists.',
     alienLife: 'Unknown',
     cryoSleepRequired: 'Recommended',
@@ -216,9 +234,11 @@ export default [
     dangerLevel: 10,
     thingsToDo: 'Observe the unusual movements and formations in the ocean, also observe strange behaviour in each other.',
     isReal: false,
+    offers: 'Free Health Insurance Cover!',
   },
   {
     name: 'Coroscant',
+    planetPosition: 16,
     planetOverview: 'A city-covered planet. Featuring a diverse mix of citizens and culture. It features towering skyscrapers, streams of speeder-filled air traffic, and inner levels that stretch far below the worlds surface.',
     alienLife: 'Yes',
     cryoSleepRequired: 'Yes',
@@ -228,6 +248,7 @@ export default [
     dangerLevel: 7,
     thingsToDo: 'Tour the skyline on a cruiser or deep dive into one of the thousands of bars, home to explosive night-life',
     isReal: true,
+    offers: 'Free "The Earth is a Digital Construct" Book for Every Purchase!',
   }
  
 ]

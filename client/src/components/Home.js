@@ -17,13 +17,25 @@ const Home = () => {
         const { data } = await axios.get('/api/planets') // * <-- replace with your endpoint
         // console.log(data)
         setPlanets(data)
-        console.log(data)
+        // console.log(data)
       } catch (err) {
         setIsError(true)
       }
     }
     getPlanets()
   }, [])
+
+  const orderedPlanets = []
+
+  const orderingPlanets = () => {
+    if (planets) {
+      planets.forEach(order => { console.log(order)})
+      const result = Object.keys(planets).sort((a,b)=> planets[a] -  planets[b]);
+      console.log(result)
+    }
+  }
+
+  
 
 
   return (
@@ -33,6 +45,7 @@ const Home = () => {
       </header>
 
       <div className='planetsContainer'>
+        {orderingPlanets()}
         {planets.map((planet, i) => {
           if (planet.isReal === true && i <= 10) {
             return (

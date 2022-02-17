@@ -17,6 +17,12 @@ router.route('/planets')
   .put(secureRoute, updatePlanet)
   .delete(secureRoute, deletePlanet)
 
+router.route('/planets/register')
+  .post(registerUser)
+
+router.route('/planets/login')
+  .post(loginUser)
+
 router.route('/planets/:id')
   .get(getPlanet)
   .put(secureRoute, updatePlanet)
@@ -28,12 +34,6 @@ router.route('/planets/:id/reviews')
 
 router.route('/planets/:id/reviews/:reviewId')
   .delete(secureRoute, deleteReview)
-
-router.route('/planets/register')
-  .post(registerUser)
-
-router.route('/planets/login')
-  .post(loginUser)
 
 router.route('/profile')
   .get(secureRoute, getProfile)
