@@ -41,7 +41,8 @@ userSchema
           matchedReviews = [ 
             ...matchedReviews, 
             ...re.reviews.filter(r => r.owner.equals(this._id)).map(r => {
-              r._doc.planet = re._id
+              r._doc.planetId = re._id
+              r._doc.planet = re.name
               return r
             })
           ]

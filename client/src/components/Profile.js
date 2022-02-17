@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Container, Row, Card, Col, Carousel } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 const Profile = () => {
 
@@ -13,8 +14,9 @@ const Profile = () => {
     }
   })
 
-  const [profile, setProfile] = useState([])
+  const [ profile, setProfile ] = useState([])
   const [ hasError, setHasError ] = useState({ error: false, message: '' })
+  const [ planet, setPlanet ] = useState([])
 
   useEffect(() => {
     const getData = async () => {
@@ -28,6 +30,40 @@ const Profile = () => {
     }
     getData()
   }, [])
+
+  useEffect(() => {
+    const getData = async () => {
+    try {
+      const { data } = await authAxios.get('/api/planets/')
+      // console.log(data)
+      setPlanet(data)
+    } catch (error) {
+      setHasError({ error: true, message: error.message })
+  }
+    }
+    getData()
+  }, [])
+
+  const allReviews = []
+
+  if (profile.reviewedPlanet) {
+    profile.reviewedPlanet.forEach(e => { 
+      allReviews.push(<>
+      <div className='singleReview'>
+        <Col className='col-md-3'> <div className='review-name'> { e.planet } </div> </Col>
+        <Col className='col-md-2'> <div className='review-rating'> {e.rating} </div> </Col>
+        <Col className='col-md-4'> <div className='review-info'>  {e.text}</div> </Col>        
+        <Col className='col-md-2'> 
+          <div className='btn jump-review-btn'> 
+            <Link to={`/planets/${e.planetId}`}>
+              Link to Planet
+            </Link>
+          </div> 
+        </Col>   
+      </div>
+      </>)
+    });
+  }
 
 
   return (
@@ -45,30 +81,7 @@ const Profile = () => {
     <Container className='profile-cont'> 
     
       <Row className='review-card'>  
-      <div className='singleReview'>
-        <Col className='col-md-3'> <div className='review-name'> Planet Name Here </div> </Col>
-        <Col className='col-md-2'> <div className='review-rating'> Review Rating </div> </Col>
-        <Col className='col-md-4'> <div className='review-info'>   Review Text Here </div> </Col>        
-        <Col className='col-md-2'> <div className='btn jump-review-btn'>   jump to Planet Review </div> </Col>   
-      </div>
-      <div className='singleReview'>
-        <Col className='col-md-3'> <div className='review-name'> Planet Name Here </div> </Col>
-        <Col className='col-md-2'> <div className='review-rating'> Review Rating </div> </Col>
-        <Col className='col-md-4'> <div className='review-info'>   Review Text Here </div> </Col>        
-        <Col className='col-md-2'> <div className='btn jump-review-btn'>   jump to Planet Review </div> </Col>   
-      </div>
-      <div className='singleReview'>
-        <Col className='col-md-3'> <div className='review-name'> Planet Name Here </div> </Col>
-        <Col className='col-md-2'> <div className='review-rating'> Review Rating </div> </Col>
-        <Col className='col-md-4'> <div className='review-info'>   Review Text Here </div> </Col>        
-        <Col className='col-md-2'> <div className='btn jump-review-btn'>   jump to Planet Review </div> </Col>   
-      </div>
-      <div className='singleReview'>
-        <Col className='col-md-3'> <div className='review-name'> Planet Name Here </div> </Col>
-        <Col className='col-md-2'> <div className='review-rating'> Review Rating </div> </Col>
-        <Col className='col-md-4'> <div className='review-info'>   Review Text Here </div> </Col>        
-        <Col className='col-md-2'> <div className='btn jump-review-btn'>   jump to Planet Review </div> </Col>   
-      </div>
+      {allReviews}
       </Row>
 
     </Container>

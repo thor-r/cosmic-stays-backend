@@ -29,9 +29,8 @@ const Home = () => {
 
   const orderingPlanets = () => {
     if (planets) {
-      planets.forEach(order => { console.log(order)})
-      const result = Object.keys(planets).sort((a,b)=> planets[a] -  planets[b]);
-      console.log(result)
+      // planets.forEach(order => { console.log(order)})
+      planets.sort((a,b)=> a.planetsPosition -  b.planetsPosition);
     }
   }
 
