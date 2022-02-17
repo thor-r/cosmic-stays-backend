@@ -7,7 +7,7 @@ import { secret } from '../config/environment.js'
 
 export const registerUser = async (req, res) => {
   try {
-    console.log(req.body)
+    // console.log(req.body)
     const newUser = await User.create(req.body)
     console.log(newUser)
     return res.status(202).json({ message: 'Account Registered' })
@@ -28,6 +28,6 @@ export const loginUser = async (req, res) => {
     const token = jwt.sign({ sub: userToLogin._id }, secret, { expiresIn: '30 days' })
     return res.status(200).json({ message: `Welcome back ${userToLogin.username}`, token: token })
   } catch (error) {
-    return res.status(402).json(error)
+    return res.status(401).json(error)
   }
 }

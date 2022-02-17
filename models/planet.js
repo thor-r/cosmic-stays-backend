@@ -17,6 +17,7 @@ const reviewSchema = new Schema({
 // planet schema
 const planetSchema = new Schema({
   name: { type: String, required: true, unique: true },
+  planetPosition: { type: Number, unique: true},
   planetOverview: { type: String, required: true },
   alienLife: { type: String },
   cryoSleepRequired: { type: String },

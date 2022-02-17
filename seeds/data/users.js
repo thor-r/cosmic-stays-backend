@@ -44,6 +44,15 @@ export default [
     password: 'pass',
     passwordConfirmation: 'pass',
     _id: '000000000005',
+  },
+
+  {
+    username: 'jom',
+    email: 'jom@email.com',
+    password: 'pass',
+    passwordConfirmation: 'pass',
+    wishList: [ 'Pluto' , 'Mars'],
+    bookedTrip: [ 'Earth' ],
   }
 ]
 

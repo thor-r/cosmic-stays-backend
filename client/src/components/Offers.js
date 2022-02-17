@@ -27,7 +27,7 @@ const Offers = () => {
   const allOffers = []
 
   for (let i = 0; i < 5; i++ ) {
-    allOffers.push(<Col> <div className='listed_offers' key={i}> <h5> {randomOffer()} </h5> </div> </Col>)
+    allOffers.push(<Col> <div className='listed_offers' key={i}> <h6> {randomOffer()} </h6> </div> </Col>)
   }
 
   return (
@@ -35,15 +35,16 @@ const Offers = () => {
       <Row className='offer_row'>
       <Carousel>
       {offers.map((deal, i) => 
-        <Carousel.Item className='offer_box' key={i} >
+        <Carousel.Item className='offer_box' id={`offer-${i}`} key={i} >
           <h3> Deal Number {i + 1} </h3>
             <p> {deal} </p>
         </Carousel.Item>
       )}
       </Carousel>
       </Row>
-      <Row>
-        { allOffers }
+      <Row className= 'featured-offers'>
+        <Row className= 'text-white d-flex justify-content-center'> <h2 className= 'd-flex justify-content-center'> Featured Offers! </h2> </Row>
+        <Row> { allOffers } </Row>
       </Row>
     </Container>
   )

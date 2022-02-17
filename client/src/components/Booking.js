@@ -107,11 +107,6 @@ const Booking = () => {
     </div>
   )
 
-
-
-
-
-
 }
 
 export default Booking

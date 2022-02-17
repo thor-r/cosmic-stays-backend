@@ -14,6 +14,7 @@ const userSchema = new Schema({
 
 // Hide Password when pulling out user information for reviews 
 userSchema.set('toJSON', {
+  virtuals: true, 
   transform(_doc, json){
     delete json.password
     return json
@@ -25,6 +26,51 @@ userSchema
   .virtual('passwordConfirmation')
   .set(function(passwordConfirmation){
     this._passwordConfirmation = passwordConfirmation
+  })
+
+//Creating Review Virtual Field 
+userSchema
+  .virtual('reviewedPlanet', {
+    ref: 'Planet', 
+    localField: '_id',
+    foreignField: 'reviews.owner',
+    get: function(res){
+      let matchedReviews = []
+      if (res) {
+        res.forEach(re => {
+          matchedReviews = [ 
+            ...matchedReviews, 
+            ...re.reviews.filter(r => r.owner.equals(this._id)).map(r => {
+              r._doc.planet = re._id
+              return r
+            })
+          ]
+        }) 
+      }
+      return matchedReviews
+    },
+
+    // get: function(reviewedPlanet){
+    //   console.log(reviewedPlanet)
+    //   return reviewedPlanet[0].reviews.filter(review => {
+    //     console.log('bobs id', this._id)
+    //     console.log(review.owner.equals(this._id))
+    //     return review.owner.equals(this._id)
+    //   })
+
+    // get: function(res){
+    //   let matchedReviews = []
+    //   res.forEach(re => {
+    //     matchedReviews = [ 
+    //       ...matchedReviews, 
+    //       ...re.reviews.filter(r => r.owner.equals(this._id)).map(r => {
+    //         r._doc.planet = re._id
+    //         return r
+    //       })
+    //     ]
+    //   })
+    //   return matchedReviews
+    // },
   })
 
 // Creating WishList Virtual Field

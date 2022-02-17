@@ -44,18 +44,56 @@ const Profile = () => {
     <Container className='profile-cont'> 
     
       <Row className='review-card'>  
-        <Col> <div className='review-name'> {profile.reviews} </div> </Col>
-        <Col> <div className='col review-info'>   Review Given </div> </Col>        
-        <Col> <div className='btn review-btn'>   jump to review </div> </Col>   
+      <div className='singleReview'>
+        <Col className='col-md-3'> <div className='review-name'> Planet Name Here </div> </Col>
+        <Col className='col-md-2'> <div className='review-rating'> Review Rating </div> </Col>
+        <Col className='col-md-4'> <div className='review-info'>   Review Text Here </div> </Col>        
+        <Col className='col-md-2'> <div className='btn jump-review-btn'>   jump to Planet Review </div> </Col>   
+      </div>
+      <div className='singleReview'>
+        <Col className='col-md-3'> <div className='review-name'> Planet Name Here </div> </Col>
+        <Col className='col-md-2'> <div className='review-rating'> Review Rating </div> </Col>
+        <Col className='col-md-4'> <div className='review-info'>   Review Text Here </div> </Col>        
+        <Col className='col-md-2'> <div className='btn jump-review-btn'>   jump to Planet Review </div> </Col>   
+      </div>
+      <div className='singleReview'>
+        <Col className='col-md-3'> <div className='review-name'> Planet Name Here </div> </Col>
+        <Col className='col-md-2'> <div className='review-rating'> Review Rating </div> </Col>
+        <Col className='col-md-4'> <div className='review-info'>   Review Text Here </div> </Col>        
+        <Col className='col-md-2'> <div className='btn jump-review-btn'>   jump to Planet Review </div> </Col>   
+      </div>
+      <div className='singleReview'>
+        <Col className='col-md-3'> <div className='review-name'> Planet Name Here </div> </Col>
+        <Col className='col-md-2'> <div className='review-rating'> Review Rating </div> </Col>
+        <Col className='col-md-4'> <div className='review-info'>   Review Text Here </div> </Col>        
+        <Col className='col-md-2'> <div className='btn jump-review-btn'>   jump to Planet Review </div> </Col>   
+      </div>
       </Row>
 
     </Container>
 
     <Container className='profile-cont'> 
       <Row className='wishList-card'>    
+      <div className='singleWishlist'> 
+      <Col className='col-md-5'>
         <div className='wishList-name'> Planet Name </div>
-        <div className='wishList-info'>   Review Given </div>
-        <div className='btn wishList-btn'>   jump to review </div>     
+        <div className='btn wishList-btn'>   Jump to Planet </div>     
+      </Col>
+      </div>
+
+      <div className='singleWishlist'> 
+      <Col className='col-md-5'>
+        <div className='wishList-name'> Planet Name </div>
+        <div className='btn wishList-btn'>   Jump to Planet </div>     
+      </Col>
+      </div>
+
+      <div className='singleWishlist'> 
+      <Col className='col-md-5'>
+        <div className='wishList-name'> Planet Name </div>
+        <div className='btn wishList-btn'>   Jump to Planet </div>     
+      </Col>
+      </div>
       </Row>
     </Container>
     </>

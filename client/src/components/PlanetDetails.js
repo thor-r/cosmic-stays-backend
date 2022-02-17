@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 
 import Container from 'react-bootstrap/Container'
+import { Button } from 'react-bootstrap'
 
 const PlanetDetails = () => {
 
@@ -26,6 +27,53 @@ const { planetId } = useParams()
   getSinglePlanet()
 
   },[planetId])
+
+  const localToken = localStorage.getItem('planets-token')
+  console.log('local token -> ', localToken)
+
+  const authAxios = axios.create({
+    headers: {
+      Authorization : `Bearer ${localToken}`
+    }
+  })
+
+  const handleAddWishList = async (req, res) => {
+    try { 
+      await authAxios.post( `/api/planets/${planetId}`, {
+        planet: planet.id,
+        addedToWishlist: true, 
+      },
+      { headers: { Authorization : `Bearer ${localToken}`},})
+      await planetId()
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  // const handlePostReview = async (req, res) => {
+  //   try { 
+  //     await authAxios.post( `/api/planets/${planetId}`, {
+  //       planet: planet.id,
+  //       addedToWishlist: true, 
+  //     },
+  //     { headers: { Authorization : `Bearer ${localToken}`},})
+  //     await planetId()
+  //     console.log(req)
+  //   } catch (error) {
+  //     console.log(error)
+  //   }
+  // }
+
+  // const handleRemoveWishList = async (planetId) => {
+  //   try {
+  //     await authAxios.delete(`/api/planets/${planetId}/`, {
+  //       headers: { Authorization : `Bearer ${localToken}` },
+  //     })
+  //     await planetId()
+  //   } catch (error) {
+  //     console.log(error)
+  //   }
+  // } 
 
   
   return(

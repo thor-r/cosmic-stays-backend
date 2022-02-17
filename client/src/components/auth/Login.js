@@ -47,6 +47,7 @@ const Login = () => {
       <Container>
         <Form onSubmit={handleSubmit} className='mt-4'>
           <h2>Login</h2>
+          <div className='wrapper'>
           <Form.Group className='mb-2'>
             <Form.Label htmlFor='email'>Email Address</Form.Label>
             <Form.Control onChange={handleChange} type="email" name="email" placeholder='Email' defaultValue={formData.email} />
@@ -57,8 +58,9 @@ const Login = () => {
           </Form.Group>
           { formError && <Form.Text>{formError}</Form.Text> }
           <Form.Group className='mt-4 text-center'>
-            <Button variant="warning" type="submit">Log in</Button>
+            <Button variant="info" className='button' type="submit">Log in</Button>
           </Form.Group>
+          </div>
         </Form>
       </Container>
     </div>
