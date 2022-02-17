@@ -4,15 +4,21 @@
   height: 200px;
   margin: 10px;
   border-radius: 20px;
-  border: 2px solid #8980F5;
+  border: 2px solid #E2F4E6;
 }
-
+.planet-details {
+  background-color: #111D4A;
+  margin: 20px;
+  padding: 20px;
+  min-width: 300px;
+  max-width: 500px;
+}
 .card-and-pics {
   display: flex;
   flex-direction: row;
   margin-top: 30px;
   margin-bottom: 50px;
-  color: #8980F5;
+  color: #E2F4E6;
 }
 .planet-images {
   display: flex;
@@ -24,14 +30,15 @@
 
 .review-box {
   border: 2px solid black;
-  padding: 5px;
   border-radius: 5px;
   width: 500px;
-  margin-bottom: 20px;
+  
+  padding: 20px;
+  margin: 20px;
 }
 
 .info {
-  color: white;
+  color: #80D39B;
 }
 
 .spotlight-container {
@@ -52,16 +59,57 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  border: 2px solid #8980F5;
+  border: 2px solid #E2F4E6;
   margin-bottom: 30px;
   border-radius: 40px;
 }
 
 .btn-book {
-  border: 2px solid #00b2ed;
-  color: white;
+  border: 2px solid #E2F4E6;
+  color: #111D4A;
+  background-color: #80D39B;
+  height: 40px;
+  width: 140px;
 }
 
 .review-btn {
   margin-top: 20px;
+  margin-bottom: 40px;
+  border: 2px solid #E2F4E6;
+  color: #111D4A;
+  background-color: #80D39B;
+  border-radius: 3px;
+  // margin-left: 20px;
+  height: 40px;
+  width: 140px;
 }
+.planet-reviews {
+  color: #E2F4E6;
+  background-color: #111D4A;
+  margin-bottom: 60px;
+  margin-left: 20px;
+  padding: 20px;
+  
+}
+.user {
+  color: #5C80BC;
+}
+.review-text {
+  color: #E2F4E6;
+}
+.rating {
+  float: right;
+  color: #80D39B;
+}
+
+.Earth {
+  width: 350px;
+}
+
+hr {
+  color: #80D39B;
+  border: 1px solid #80D39B;
+  opacity: 0.5
+}
+
+
