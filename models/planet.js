@@ -8,7 +8,7 @@ const { Schema } = mongoose
 
 const reviewSchema = new Schema({
   text: { type: String, required: true, maxlength: 300 },
-  rating: { type: Number, required: true, min: 1, max: 10 },
+  rating: { type: Number, required: true, min: 1, max: 5 },
   owner: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
 }, {
   timestamps: true,
@@ -34,6 +34,7 @@ const planetSchema = new Schema({
   owner: { type: mongoose.Schema.ObjectId, ref: 'User', required: true },
   isReal: { type: Boolean, required: true },
   image: { type: String },
+  imageGallery: [{ type: String }],
 })
 
 // virtual average rating field

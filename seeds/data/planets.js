@@ -33,6 +33,7 @@ export default [
     offers: 'Book now and get upgraded to a Sun-view room',
     isReal: true,
     image: 'https://i.imgur.com/RkH8iD5.png',
+    imageGallery: ['https://i.imgur.com/QdW04nk.jpeg','https://i.imgur.com/5yKSgdB.jpeg','https://i.imgur.com/sKhd5IP.jpeg','https://i.imgur.com/vtirW0B.jpeg'],
   },
 
   {
@@ -46,6 +47,7 @@ export default [
     offers: 'Breakfast included',
     isReal: true,
     image: 'https://i.imgur.com/GH9NFnO.png',
+    imageGallery: ['https://i.imgur.com/ORyukDr.jpg','https://i.imgur.com/AeV0X9V.jpg','https://i.imgur.com/lSUWm5c.jpg','https://i.imgur.com/mk9Ab0N.jpg'],
   },
 
   {
@@ -59,6 +61,7 @@ export default [
     offers: 'Buy one week, stay a second week free.',
     isReal: true,
     image: 'https://i.imgur.com/pjL2Nzr.png',
+    imageGallery: ['https://i.imgur.com/Uc4X8b7.jpg'],
   },
 
   {
@@ -78,6 +81,7 @@ export default [
       owner: '000000000002',
     } ],
     image: 'https://i.imgur.com/fY3xshZ.png',
+    imageGallery: ['https://i.imgur.com/ZWj9z5W.jpeg','https://i.imgur.com/JloR4sq.jpeg','https://i.imgur.com/jyqxhBl.jpeg','https://i.imgur.com/Clue6xp.jpeg','https://i.imgur.com/iLip0Ps.jpeg'],
   },
 
   {
@@ -91,6 +95,7 @@ export default [
     thingsToDo: 'Exposure Craft tour of the planets liquid hydrogen surface',
     isReal: true,
     image: 'https://i.imgur.com/4YaIfVQ.png',
+    imageGallery: ['https://i.imgur.com/MXk69ws.jpeg','https://i.imgur.com/AoHPgUY.jpeg','https://i.imgur.com/RFxyGP3.jpeg','https://i.imgur.com/yLlmSf6.jpeg'],
   },
 
   {
@@ -105,6 +110,7 @@ export default [
     offers: 'Guided day tour to the rings included',
     isReal: true,
     image: 'https://i.imgur.com/OzZSV0H.png',
+    imageGallery: ['https://i.imgur.com/qt1h2sG.jpeg','https://i.imgur.com/Y7zNhzw.jpeg','https://i.imgur.com/Hv7ImyZ.jpeg'],
   },
 
   {
@@ -132,6 +138,7 @@ export default [
     offers: 'Free daytrip to Triton ',
     isReal: true,
     image: 'https://i.imgur.com/gc4eNyK.png',
+    imageGallery: ['https://i.imgur.com/vC2W47N.jpeg', 'https://i.imgur.com/8v5d4BA.jpeg', 'https://i.imgur.com/rwckuO3.jpeg'],
   },
   {
     name: 'Pluto', 
@@ -146,6 +153,7 @@ export default [
     offers: 'Free kinetic socks on successfull booking',
     isReal: true,
     image: 'https://i.imgur.com/1yelOoh.png',
+    imageGallery: ['https://i.imgur.com/F9ADbbp.jpeg','https://i.imgur.com/LW5tVEq.jpeg','https://i.imgur.com/GKkpKiU.jpeg'],
   },
   {
     name: 'Arrakis',

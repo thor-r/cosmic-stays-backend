@@ -8,7 +8,7 @@
   cursor: pointer;
   position: relative;
   z-index: 0;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .btn-nav:before {
@@ -25,11 +25,11 @@
   animation: glowing 20s linear infinite;
   opacity: 0;
   transition: opacity .3s ease-in-out;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 .btn-nav:active {
-  color: #000
+  color: #000000
 }
 
 .btn-nav:active:after {
@@ -49,7 +49,7 @@
   background: #111;
   left: 0;
   top: 0;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 @keyframes glowing {
@@ -57,3 +57,13 @@
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
 }
+
+
+.btn-primary {
+  background-color: #B3C4D1;
+  border: 3px solid #8980F5;
+  color: #8980F5;
+  font-weight: 700;
+}
+
+

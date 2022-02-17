@@ -5,18 +5,28 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100vh;
+  // width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-  // background: black;
+  background: grey;
+  overflow: scroll;
+  background: url('https://i.imgur.com/nwn7Kc2.jpeg') center;
+  background-size: fill;
+  background-repeat:repeat-x;
 }
+
 .title {
   margin-top: 90px;
   text-align: center;
-  color: antiquewhite;
+  color: white;
+  background: url('https://i.imgur.com/BQWp0cc.png') center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  h1 {
+    opacity: 0;
+  }
 }
 
 .planetsContainer {
@@ -24,19 +34,80 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 160px;
+  // max-width: 150%;
+}
+
+.planet-div {
+  position: relative;
+  display: block;
+  flex: 1 1 0px;
+  transition: transform 500ms;
+}
+
+.planetsContainer:focus-within .planet-div,
+.planetsContainer:hover .planet-div {
+  transform: translateX(-0%);
+}
+
+.planet-div:focus ~ .planet-div,
+.planet-div:hover ~ .planet-div {
+  transform: translateX(0%);
+}
+
+.planetsContainer .planet-div:focus,
+.planetsContainer .planet-div:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+.planet-div img {
+  display: block;
+  // max-width: 150%;
+  width: 400px;
+  height: 300px;
+  margin-right: 10px;
 }
 
 .Pluto {
   img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 110px;
+    margin-top: 80px;
+    margin-right: 40px;
   }
 }
 
 .Moon {
   img {
-    width: 185px;
+    width: 200px;
     height: 135px;
+    margin-top: 80px;
   }
 }
 
+.hover-info {
+opacity: 0;
+position: absolute;
+width: 250px;
+height: 100px;
+color: #fff;
+padding: 0.75em 1em;
+font-weight: lighter;
+z-index: 2;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+background-color: rgba(0,0,0,.7);
+-webkit-transition: opacity .3s ease-in-out;
+transition: opacity .3s ease-in-out;
+border-radius: 30px;
+margin-left: 80px;
+}
+
+.hover-info:hover {
+  opacity: 0.9;
+  background-color: black;
+}
+
+img:hover .hover-info {
+  opacity: 1;
+}
