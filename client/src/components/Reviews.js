@@ -2,10 +2,13 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Container, Row } from 'react-bootstrap'
 import { useParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+
 
 const Review = () => {
   const { planetId } = useParams()
   const localToken = localStorage.getItem('planets-token')
+  const navigate = useNavigate()
   // const authAxios = axios.create({
   //   headers: {
   //     Authorization : `Bearer ${localToken}`
@@ -41,7 +44,7 @@ const Review = () => {
           Authorization : `Bearer ${localToken}`
         } }
       )
-      
+      navigate(`/planets/${planetId}`) 
     } catch (error) {
       console.log(error)
     }

@@ -29,8 +29,13 @@ const Home = () => {
 
   const orderingPlanets = () => {
     if (planets) {
+      planets.sort((a,b) => a.planetPosition -  b.planetPosition)
+      console.log(orderingPlanets)
+        
       // planets.forEach(order => { console.log(order)})
-      planets.sort((a,b)=> a.planetsPosition -  b.planetsPosition);
+      // const result = Object.keys(planets).sort((a,b)=> planets[b] -  planets[a]);
+      // console.log(result)
+    
     }
   }
 

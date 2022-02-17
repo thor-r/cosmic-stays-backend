@@ -26,7 +26,7 @@ const Offers = () => {
 
   const allOffers = []
 
-  for (let i = 0; i < 5; i++ ) {
+  for (let i = 0; i < 4; i++ ) {
     allOffers.push(<Col> <div className='listed_offers' key={i}> <h6> {randomOffer()} </h6> </div> </Col>)
   }
 

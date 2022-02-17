@@ -80,11 +80,11 @@ export default [
     thingsToDo: 'Growing potatoes with Matt Damon, Climbing Olympus Mons',
     offers: 'Free pair of climbing boots, when you book a 3 night stay',
     isReal: true,
-    reviews: [ {
-      text: 'Planet sucks had to grow my own potatoes using, you dont want to know what.',
-      rating: '3',
-      owner: '000000000002',
-    } ],
+    // reviews: [ {
+    //   text: 'Planet sucks had to grow my own potatoes using, you dont want to know what.',
+    //   rating: '3',
+    //   owner: '000000000002',
+    // } ],
     image: 'https://i.imgur.com/fY3xshZ.png',
     imageGallery: ['https://i.imgur.com/ZWj9z5W.jpeg','https://i.imgur.com/JloR4sq.jpeg','https://i.imgur.com/jyqxhBl.jpeg','https://i.imgur.com/Clue6xp.jpeg','https://i.imgur.com/iLip0Ps.jpeg'],
   },
