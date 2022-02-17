@@ -48,7 +48,7 @@ const { planetId } = useParams()
           <h6>Danger Level: <span class="info">{planet.dangerLevel}</span></h6>
           <hr/>
           <h6>Average Rating: <span class="info">{planet.avgRating}</span></h6>
-          <Link className='btn btn-book' to="/booking">Travel</Link>
+          <Link className='btn btn-book' to="/booking">Book {planet.name}</Link>
         </div> }
 
       { planet &&
@@ -75,14 +75,13 @@ const { planetId } = useParams()
           console.log(review)
           return <div key={review._id}>
             <div className='review-box'>
-            {review.owner.username} <br></br> {review.text} <br></br> <br></br>Rating : {review.rating}
+            <span className='user'>{review.owner.username}</span><span className='rating'>Rating : {review.rating}</span> <br></br><br></br> <span className='review-text'><em>{review.text}</em></span>
             </div>
           </div>
         })}
+        <Link to={`/planets/${planetId}/reviews/`}> <button className='review-btn'> Review {planet.name}</button> </Link>
       </div> }
 
-    
-      <Link to={`/planets/${planetId}/reviews/`}> <button className='review-btn'>Add Review</button> </Link>
     </Container>
     
   )
