@@ -25,12 +25,12 @@ const Home = () => {
     getPlanets()
   }, [])
 
-  const orderedPlanets = []
+  // const orderedPlanets = []
 
   const orderingPlanets = () => {
     if (planets) {
       planets.sort((a,b) => a.planetPosition -  b.planetPosition)
-      console.log(orderingPlanets)
+      // console.log(orderingPlanets)
         
       // planets.forEach(order => { console.log(order)})
       // const result = Object.keys(planets).sort((a,b)=> planets[b] -  planets[a]);
@@ -38,9 +38,6 @@ const Home = () => {
     
     }
   }
-
-  
-
 
   return (
     <>
