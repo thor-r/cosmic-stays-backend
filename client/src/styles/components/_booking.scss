@@ -6,7 +6,7 @@
   height: 600px;
   width: 500px;
   margin-top: 105px;
-  margin-left: 155px;
+  margin-left: 125px;
   padding-bottom: 50px;
   border-radius: 50px;
   border: 3px solid #24E5AB;
@@ -20,13 +20,14 @@
   
 .booking-parent {
   background-color: aqua;
-  width: 800px;
+  width: 750px;
   height: 800px;
   display: flex;
   flex-direction: column;
   justify-self: center;
-  margin-left: 450px;
-  margin-top: 100px;
+  // margin-left: 500px;
+  // margin-top: 80px;
+  margin: 60px auto;
   border-radius: 40px;
   background: url('https://i.imgur.com/IMxGuoe.jpg') center;
   background-size: contain;
@@ -36,10 +37,7 @@
   
 }
 
-h4 {
-  color: #E2F4E6;
-  margin-bottom: 30px;
-}
+
 
 .field {
   margin-bottom: 18px;
@@ -70,4 +68,6 @@ input {
 .btn-primary {
   margin-left: 40px;
 }
+
+
 

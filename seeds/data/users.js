@@ -82,6 +82,5 @@ export default [
     passwordConfirmation: 'pass',
     _id: '000000000009',
   }
-
 ]
 
