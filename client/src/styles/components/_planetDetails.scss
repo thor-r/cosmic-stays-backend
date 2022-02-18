@@ -2,7 +2,7 @@
 .image {
   width: 200px;
   height: 200px;
-  margin: 10px;
+  margin: 20px;
   border-radius: 20px;
   border: 2px solid #E2F4E6;
 }
@@ -12,6 +12,7 @@
   padding: 20px;
   min-width: 300px;
   max-width: 500px;
+  border-radius: 20px;
 }
 .card-and-pics {
   display: flex;
@@ -25,16 +26,16 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 30px;
-  padding-left: 100px;
+  padding-left: 50px;
+  margin-bottom: 150px;
 }
 
 .review-box {
-  border: 2px solid black;
+  border: 2px solid #80D39B;
   border-radius: 5px;
   width: 500px;
-  
   padding: 20px;
-  margin: 20px;
+  margin: 20px 0px;
 }
 
 .info {
@@ -79,24 +80,33 @@
   color: #111D4A;
   background-color: #80D39B;
   border-radius: 3px;
-  // margin-left: 20px;
   height: 40px;
   width: 140px;
+  margin-left: 10px;
 }
+
 .planet-reviews {
   color: #E2F4E6;
-  background-color: #111D4A;
   margin-bottom: 60px;
-  margin-left: 20px;
+  margin-left: 5px;
   padding: 20px;
-  
+  // border-radius: 30px;
+  // background-color: #111D4A;
 }
+
+.review-box {
+  background-color: #5C80BC;
+  // margin-left: 5px;
+}
+
 .user {
-  color: #5C80BC; 
+  color: #80D39B;
 }
+
 .review-text {
   color: #E2F4E6;
 }
+
 .rating {
   float: right;
   color: #80D39B;
@@ -111,5 +121,6 @@ hr {
   border: 1px solid #80D39B;
   opacity: 0.5
 }
+
 
 

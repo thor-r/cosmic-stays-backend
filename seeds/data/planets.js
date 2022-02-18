@@ -10,6 +10,11 @@ export default [
     thingsToDo: 'Rock climbing. Thermal hot springs. Observing the sun',
     offers: 'Book now and get upgraded to a Sun-view room',
     isReal: true,
+    reviews: [{
+      text: 'Hot', 
+      rating: '2',
+      owner: '000000000001',
+    }],
     image: 'https://i.imgur.com/RkH8iD5.png',
     imageGallery: ['https://i.imgur.com/QdW04nk.jpeg','https://i.imgur.com/5yKSgdB.jpeg','https://i.imgur.com/sKhd5IP.jpeg','https://i.imgur.com/vtirW0B.jpeg'],
   },
@@ -25,6 +30,11 @@ export default [
     thingsToDo: 'Tour the multiude of Volcanoes and lava spirals from your exposure craft',
     offers: 'Breakfast included',
     isReal: true,
+    reviews: [{
+      text: 'Yellowstone, but better ', 
+      rating: '5',
+      owner: '000000000004',
+    }],
     image: 'https://i.imgur.com/GH9NFnO.png',
     imageGallery: ['https://i.imgur.com/ORyukDr.jpg','https://i.imgur.com/AeV0X9V.jpg','https://i.imgur.com/lSUWm5c.jpg','https://i.imgur.com/mk9Ab0N.jpg'],
   },
@@ -40,6 +50,11 @@ export default [
     thingsToDo: 'People watching',
     offers: 'Buy one week, stay a second week free.',
     isReal: true,
+    reviews: [{
+      text: 'Too crowded. Get me back to the moon.',
+      rating: '2',
+      owner: '000000000002',
+    }],
     image: 'https://i.imgur.com/pjL2Nzr.png',
     imageGallery: ['https://i.imgur.com/Uc4X8b7.jpg'],
   },
@@ -55,7 +70,7 @@ export default [
     thingsToDo: 'Taking one small step. Great views of earth',
     offers: 'Book now and get upgraded to an earth view room',
     isReal: true,
-    reviews: [ {
+    reviews: [{
       text: 'Me and Buzz travelled there back in 69. Some great views of earth but been spolit by tourism since ', 
       rating: '4',
       owner: '000000000001',
@@ -80,11 +95,11 @@ export default [
     thingsToDo: 'Growing potatoes with Matt Damon, Climbing Olympus Mons',
     offers: 'Free pair of climbing boots, when you book a 3 night stay',
     isReal: true,
-    // reviews: [ {
-    //   text: 'Planet sucks had to grow my own potatoes using, you dont want to know what.',
-    //   rating: '3',
-    //   owner: '000000000002',
-    // } ],
+    reviews: [{
+      text: 'Planet sucks had to grow my own potatoes using, you dont want to know what.',
+      rating: '3',
+      owner: '000000000002',
+    }],
     image: 'https://i.imgur.com/fY3xshZ.png',
     imageGallery: ['https://i.imgur.com/ZWj9z5W.jpeg','https://i.imgur.com/JloR4sq.jpeg','https://i.imgur.com/jyqxhBl.jpeg','https://i.imgur.com/Clue6xp.jpeg','https://i.imgur.com/iLip0Ps.jpeg'],
   },
@@ -100,6 +115,11 @@ export default [
     dangerLevel: 9,
     thingsToDo: 'Exposure Craft tour of the planets liquid hydrogen surface',
     isReal: true,
+    reviews: [{
+      text: 'Lovely red spot, but difficult to get around. Too much to see in 3 days', 
+      rating: '4',
+      owner: '000000000002',
+    }],
     image: 'https://i.imgur.com/4YaIfVQ.png',
     imageGallery: ['https://i.imgur.com/MXk69ws.jpeg','https://i.imgur.com/AoHPgUY.jpeg','https://i.imgur.com/RFxyGP3.jpeg','https://i.imgur.com/yLlmSf6.jpeg'],
     offers: 'Half-Price for Humans 100+ years or older!',
@@ -117,6 +137,11 @@ export default [
     thingsToDo: 'Windsurfing, sailing, flying a kite, Metal-detecting',
     offers: 'Guided day tour to the rings included',
     isReal: true,
+    reviews: [{
+      text: '.',
+      rating: '3',
+      owner: '000000000002',
+    }],
     image: 'https://i.imgur.com/OzZSV0H.png',
     imageGallery: ['https://i.imgur.com/qt1h2sG.jpeg','https://i.imgur.com/Y7zNhzw.jpeg','https://i.imgur.com/Hv7ImyZ.jpeg'],
   },
@@ -133,6 +158,11 @@ export default [
     thingsToDo: 'Skiing, ice skating and the luge. Due to host the winter olympics in 6533',
     offers: 'Ski-in Ski out upgrade',
     isReal: true,
+    reviews: [{
+      text: 'Plain and boring. The vegan options are very limited. Long travel for very little, I should have stayed at home. Coys',
+      rating: '1',
+      owner: '000000000006',
+    }],
     image: 'https://i.imgur.com/HGL5Av4.png',
   },
   {
@@ -147,6 +177,11 @@ export default [
     thingsToDo: 'Skiing. Neptunes moon Triton is also worth a visit',
     offers: 'Free daytrip to Triton ',
     isReal: true,
+    reviews: [{
+      text: 'I am the king',
+      rating: '5',
+      owner: '000000000005',
+    }],
     image: 'https://i.imgur.com/gc4eNyK.png',
     imageGallery: ['https://i.imgur.com/vC2W47N.jpeg', 'https://i.imgur.com/8v5d4BA.jpeg', 'https://i.imgur.com/rwckuO3.jpeg'],
   },
@@ -163,6 +198,11 @@ export default [
     thingsToDo: 'Visit the heart-shaped indendation on the planets surface! The cause of Plutos unusal orbit',
     offers: 'Free kinetic socks on successfull booking',
     isReal: true,
+    reviews: [{
+      text: 'Despite what it said in the broucher, this is not a planet.',
+      rating: '1',
+      owner: '000000000006',
+    }],
     image: 'https://i.imgur.com/1yelOoh.png',
     imageGallery: ['https://i.imgur.com/F9ADbbp.jpeg','https://i.imgur.com/LW5tVEq.jpeg','https://i.imgur.com/GKkpKiU.jpeg'],
   },
@@ -179,6 +219,7 @@ export default [
     thingsToDo: 'Relax from one of the few grand Empirial compounds, or go Worm-watching from the saftey of the sky!',
     offers: 'Two Stillsuits for the price of one',
     isReal: false,
+    reviews: [],
   },
   {
     name: 'Endor',
@@ -193,6 +234,7 @@ export default [
     thingsToDo: 'Tear through the endless forests on a speederbike',
     offers: 'Free trip to the Destroyed Shield Generator Museum',
     isReal: false,
+    reviews: [],
   },
   {
     name: 'Krpton',
@@ -206,6 +248,7 @@ export default [
     dangerLevel: 2,
     thingsToDo: 'Take your pick in exploring some one of the most advanced technologial societies in the universe',
     isReal: false,
+    reviews: [],
     offers: 'Free Glowing Green Rocks for every trip bought!',
   },
   {
@@ -234,6 +277,7 @@ export default [
     dangerLevel: 10,
     thingsToDo: 'Observe the unusual movements and formations in the ocean, also observe strange behaviour in each other.',
     isReal: false,
+    reviews: [],
     offers: 'Free Health Insurance Cover!',
   },
   {
@@ -248,6 +292,7 @@ export default [
     dangerLevel: 7,
     thingsToDo: 'Tour the skyline on a cruiser or deep dive into one of the thousands of bars, home to explosive night-life',
     isReal: true,
+    reviews: [],
     offers: 'Free "The Earth is a Digital Construct" Book for Every Purchase!',
   }
  

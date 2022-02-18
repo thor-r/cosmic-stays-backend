@@ -54,7 +54,7 @@ const Register = () => {
           <Form.Group className='mb-2'>
             <Form.Label htmlFor='username'>Username</Form.Label>
             <Form.Control onChange={handleChange} type="text" name="username" placeholder="Username" value={formData.username} />
-            {formErrors.username && <Form.Text>{formErrors.username}</Form.Text>}
+            {formErrors.username && <Form.Text> {formErrors.username} </Form.Text>}
           </Form.Group>
           {/* Email */}
           <Form.Group className='mb-2'>

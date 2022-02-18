@@ -1,4 +1,4 @@
-export const getTokenFromLocalStorage = () => {
+const getTokenFromLocalStorage = () => {
   return window.localStorage.getItem('planets-token')
 }
 
