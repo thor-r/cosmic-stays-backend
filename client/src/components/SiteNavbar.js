@@ -7,13 +7,14 @@ import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
 
 
+
 const SiteNavbar = () => {
 
   return (
     <div className='nav-style'>
       <div className='nav-logo'>
       <Navbar.Brand>
-        <Link className='btn btn-logo' to='/'> Home </Link>
+        <Link className='btn btn-logo' to='/'> <img className='logo' src={require('../image/logo.png')} alt='logo' key= 'logo' /> </Link>
       </Navbar.Brand>
       </div>
 
