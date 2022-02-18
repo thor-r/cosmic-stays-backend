@@ -1,3 +1,5 @@
+import {Buffer} from 'buffer'
+
 const getTokenFromLocalStorage = () => {
   return window.localStorage.getItem('planets-token')
 }
