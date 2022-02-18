@@ -11,9 +11,14 @@ export default [
     offers: 'Book now and get upgraded to a Sun-view room',
     isReal: true,
     reviews: [{
-      text: 'Hot', 
+      text: 'Too hot. Go to the moon instead.', 
       rating: '2',
       owner: '000000000001',
+    },
+    {
+      text: 'What do you win a space talent competition? A constellation prize!', 
+      rating: '3',
+      owner: '000000000007',
     }],
     image: 'https://i.imgur.com/RkH8iD5.png',
     imageGallery: ['https://i.imgur.com/QdW04nk.jpeg','https://i.imgur.com/5yKSgdB.jpeg','https://i.imgur.com/sKhd5IP.jpeg','https://i.imgur.com/vtirW0B.jpeg'],
@@ -34,6 +39,16 @@ export default [
       text: 'Yellowstone, but better ', 
       rating: '5',
       owner: '000000000004',
+    },
+    {
+      text: 'Why didnt Venus go to college? Becuase it already had 500 degrees', 
+      rating: '4',
+      owner: '000000000007',
+    },
+    {
+      text: 'The vegan options are very limited. Coys.',
+      rating: '3',
+      owner: '000000000006',
     }],
     image: 'https://i.imgur.com/GH9NFnO.png',
     imageGallery: ['https://i.imgur.com/ORyukDr.jpg','https://i.imgur.com/AeV0X9V.jpg','https://i.imgur.com/lSUWm5c.jpg','https://i.imgur.com/mk9Ab0N.jpg'],
@@ -76,12 +91,18 @@ export default [
       owner: '000000000001',
     }, 
     {
+      text: 'What do you call a tick on the moon? A Luna-tick!', 
+      rating: '4',
+      owner: '000000000007',
+    },
+    {
       text: 'Lacks atmosphere', 
       rating: '3',
       owner: '000000000004',
     }],
     image: 'https://i.imgur.com/rFq243m.png',
   },
+  
 
   {
     name: 'Mars', 
@@ -99,6 +120,11 @@ export default [
       text: 'Planet sucks had to grow my own potatoes using, you dont want to know what.',
       rating: '3',
       owner: '000000000002',
+    },
+    {
+      text: 'Onde e a praia? Onde vai ser o Carnival?', 
+      rating: '2',
+      owner: '000000000009',
     }],
     image: 'https://i.imgur.com/fY3xshZ.png',
     imageGallery: ['https://i.imgur.com/ZWj9z5W.jpeg','https://i.imgur.com/JloR4sq.jpeg','https://i.imgur.com/jyqxhBl.jpeg','https://i.imgur.com/Clue6xp.jpeg','https://i.imgur.com/iLip0Ps.jpeg'],
@@ -119,6 +145,11 @@ export default [
       text: 'Lovely red spot, but difficult to get around. Too much to see in 3 days', 
       rating: '4',
       owner: '000000000002',
+    },
+    {
+      text: 'Did not have dog park',
+      rating: '3',
+      owner: '000000000008',
     }],
     image: 'https://i.imgur.com/4YaIfVQ.png',
     imageGallery: ['https://i.imgur.com/MXk69ws.jpeg','https://i.imgur.com/AoHPgUY.jpeg','https://i.imgur.com/RFxyGP3.jpeg','https://i.imgur.com/yLlmSf6.jpeg'],
@@ -138,9 +169,14 @@ export default [
     offers: 'Guided day tour to the rings included',
     isReal: true,
     reviews: [{
-      text: '.',
+      text: 'Im reading a great book about anti-gravity. Its impossible to put down.',
       rating: '3',
-      owner: '000000000002',
+      owner: '000000000009',
+    },
+    {
+      text: 'Saturn. Has a loveley ring to it!', 
+      rating: '5',
+      owner: '000000000007',
     }],
     image: 'https://i.imgur.com/OzZSV0H.png',
     imageGallery: ['https://i.imgur.com/qt1h2sG.jpeg','https://i.imgur.com/Y7zNhzw.jpeg','https://i.imgur.com/Hv7ImyZ.jpeg'],
@@ -159,8 +195,8 @@ export default [
     offers: 'Ski-in Ski out upgrade',
     isReal: true,
     reviews: [{
-      text: 'Plain and boring. The vegan options are very limited. Long travel for very little, I should have stayed at home. Coys',
-      rating: '1',
+      text: 'Why was the star arrested? It was a shooting star!',
+      rating: '3',
       owner: '000000000006',
     }],
     image: 'https://i.imgur.com/HGL5Av4.png',
@@ -181,6 +217,11 @@ export default [
       text: 'I am the king',
       rating: '5',
       owner: '000000000005',
+    },
+    {
+      text: 'Why did the scarecrow win an award? Because it was the best in its field! ', 
+      rating: '4',
+      owner: '000000000007',
     }],
     image: 'https://i.imgur.com/gc4eNyK.png',
     imageGallery: ['https://i.imgur.com/vC2W47N.jpeg', 'https://i.imgur.com/8v5d4BA.jpeg', 'https://i.imgur.com/rwckuO3.jpeg'],

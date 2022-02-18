@@ -41,6 +41,7 @@ const Booking = () => {
   return (
     <div className='booking-parent'>
     <div className='booking-section'>
+      <h4>Shuttle up and get moving</h4>
       <form onSubmit={handleSubmit}>
         <div className='field'>
           <label className='label'>Email</label>

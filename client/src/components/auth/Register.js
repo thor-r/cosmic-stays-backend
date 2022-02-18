@@ -40,7 +40,6 @@ const Register = () => {
       await axios.post('/api/planets/register', formData)
       navigate('/login')
     } catch (err) {
-      // await axios.get('/api/planets/register')
       setFormErrors(err.response.data.message)
     }
   }
