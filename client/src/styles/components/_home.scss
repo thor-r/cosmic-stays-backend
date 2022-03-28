@@ -4,45 +4,119 @@
 
 body {
   margin: 0;
-  padding: 0;
-  // width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  background: grey;
-  overflow: scroll;
+  max-width: 100%;
+  height: auto;
   background: url('https://i.imgur.com/nwn7Kc2.jpeg') center;
   background-size: fill;
-  background-repeat:repeat-x;
 }
 
+
 .title {
-  margin-top: 90px;
   text-align: center;
   color: white;
   background: url('https://i.imgur.com/5oyrRzx.png') center;
   background-size: contain;
   background-repeat: no-repeat;
-
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 35px;
   h1 {
     opacity: 0;
   }
 }
 
-.planetsContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 160px;
-  // max-width: 150%;
+.planets-container {
+  perspective: 1000px;
+  width: max-content;
+  max-height: max-content;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
 .planet-div {
-  position: relative;
-  display: block;
-  flex: 1 1 0px;
-  transition: transform 500ms;
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
+  transform-style: preserve-3d; 
+  animation: rotate360 60s infinite forwards linear;
+  display: inline;
+  color: red;
 }
+
+.planet-link {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d; 
+  display: inline;
+}
+
+.planet_face { 
+  position: absolute;
+  width: 265px;
+  height: 220px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+}
+
+
+.Moon {
+  height: 105px;
+  width: 150px;
+  margin-top: 20px;
+
+}
+
+.Pluto {
+  height: 100px;
+  width: 100px;
+  margin-top: 20px;
+}
+
+
+.planet_face:nth-child(1) {
+  transform: rotateY(0deg) translateZ(600px); }
+
+.planet_face:nth-child(2) { 
+    transform: rotateY(36deg) translateZ(600px); }
+
+.planet_face:nth-child(3) {
+  transform: rotateY(72deg) translateZ(600px); }
+
+.planet_face:nth-child(4) {
+  transform: rotateY(108deg) translateZ(600px); }
+
+.planet_face:nth-child(5) { 
+ transform: rotateY(144deg) translateZ(600px); }
+
+.planet_face:nth-child(6) { 
+ transform: rotateY(180deg) translateZ(600px); }
+
+.planet_face:nth-child(7) { 
+ transform: rotateY(216deg) translateZ(600px); }
+
+.planet_face:nth-child(8) {
+  transform: rotateY(252deg) translateZ(600px); }
+
+.planet_face:nth-child(9) {
+  transform: rotateY(288deg) translateZ(600px); }
+
+.planet_face:nth-child(10) {
+  transform: rotateY(324deg) translateZ(600px); }
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+
 
 .planetsContainer:focus-within .planet-div,
 .planetsContainer:hover .planet-div {
@@ -60,30 +134,6 @@ body {
   z-index: 1;
 }
 
-.planet-div img {
-  display: block;
-  // max-width: 150%;
-  width: 400px;
-  height: 300px;
-  margin-right: 10px;
-}
-
-.Pluto {
-  img {
-    width: 120px;
-    height: 110px;
-    margin-top: 80px;
-    margin-right: 40px;
-  }
-}
-
-.Moon {
-  img {
-    width: 200px;
-    height: 135px;
-    margin-top: 80px;
-  }
-}
 
 .hover-info {
 opacity: 0;
@@ -101,6 +151,7 @@ background-color: rgba(0,0,0,.7);
 transition: opacity .3s ease-in-out;
 border-radius: 30px;
 margin-left: 80px;
+
 }
 
 .hover-info:hover {

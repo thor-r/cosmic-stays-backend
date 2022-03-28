@@ -90,7 +90,7 @@ const Profile = () => {
 
     <Container className='wishList-cont'> 
       <Row className='wishList-card'> 
-      <Row> <h3> Wish wishList </h3> </Row>  
+      <Row> <h3> Wishlist </h3> </Row>  
       {planets.map((planet, i) => {
     if (i <= 2) {
       console.log(planet)
