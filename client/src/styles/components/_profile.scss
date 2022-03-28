@@ -1,7 +1,5 @@
 
-*{
-  box-sizing: border-box;
-}
+
 
 .profile-cont {
   display: flex;
@@ -59,7 +57,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  height: 100%;
+  height: auto;
   width: 100%;
   background-color: #111D4A;
   padding: 30px 40px;

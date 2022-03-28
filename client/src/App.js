@@ -15,7 +15,7 @@ import Reviews from './components/Reviews'
 
 function App() {
   return (
-    <div className='site-wrapper'>
+    <>
       <BrowserRouter>
       <SiteNavbar />
       
@@ -35,7 +35,7 @@ function App() {
       <Footer />
     </BrowserRouter>
   
-  </div >
+  </>
   )
 }
 

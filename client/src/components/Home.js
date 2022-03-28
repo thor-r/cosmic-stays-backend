@@ -10,11 +10,12 @@ const Home = () => {
 
   const [isError, setIsError] = useState(false)
 
+  
 
   useEffect(() => {
     const getPlanets = async () => {
       try {
-        const { data } = await axios.get('/api/planets') // * <-- replace with your endpoint
+        const { data } = await axios.get('/api/planets') 
         // console.log(data)
         setPlanets(data)
         console.log(data)
@@ -25,36 +26,71 @@ const Home = () => {
     getPlanets()
   }, [])
 
+  const orderingPlanets = () => {
+    if (planets) {
+      planets.sort((a,b) => a.planetPosition - b.planetPosition)
+    }
+  }
 
-  return (
-    <>
-      <header className='title'>
-        <h1>C</h1>
-      </header>
+return (
+  <>
+  
+    <header className='title'>
+      <h1>C</h1>
+    </header>
 
-      <div className='planetsContainer'>
-        {planets.map((planet, i) => {
-          if (planet.isReal === true && i <= 10) {
-            return (
-              <Link id='planet-link' to={`/planets/${planet.id}`}>
-                <div className={`planet-div ${planet.name}`} id='css-fix' key={i} value={i}>
+    <div className='planets-container'>
 
-                  <img src={planet.image} alt={planet.name} />
 
-                </div>
+      <div className='planet-div'>
+      {orderingPlanets()}
+      {planets.map((planet, i) => {
+        if (planet.isReal === true && i <= 10) {
+          return (
 
-                <div className='hover-info'>・{planet.name} <br></br> ・{planet.distanceFromEarth} <br></br> ・{planet.travelTime} away
-                </div>
-              </Link>
-              
-            )
-          } else {
-            console.log("no matching planets")
-          }
-        })}
+            <>
+        
+                <Link className='planet_face' to={`/planets/${planet.id}`}>
+        
+                <img className={`planet_face ${planet.name}`} src={planet.image} alt={planet.name} />
+  
+                <div className='hover-info'>・{planet.name} <br></br> ・{planet.distanceFromEarth} <br></br> ・{planet.travelTime} away </div> 
+
+                        
+            </Link>
+          
+          </>
+                
+          )
+        } else {
+          console.log("no matching planets")
+        }
+      })} 
       </div>
-    </>
-  )
+    </div>
+  </>
+)
 }
 
 export default Home
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

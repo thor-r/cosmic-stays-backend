@@ -50,27 +50,6 @@ userSchema
       return matchedReviews
     },
 
-    // get: function(reviewedPlanet){
-    //   console.log(reviewedPlanet)
-    //   return reviewedPlanet[0].reviews.filter(review => {
-    //     console.log('bobs id', this._id)
-    //     console.log(review.owner.equals(this._id))
-    //     return review.owner.equals(this._id)
-    //   })
-
-    // get: function(res){
-    //   let matchedReviews = []
-    //   res.forEach(re => {
-    //     matchedReviews = [ 
-    //       ...matchedReviews, 
-    //       ...re.reviews.filter(r => r.owner.equals(this._id)).map(r => {
-    //         r._doc.planet = re._id
-    //         return r
-    //       })
-    //     ]
-    //   })
-    //   return matchedReviews
-    // },
   })
 
 // Creating WishList Virtual Field
@@ -116,6 +95,7 @@ userSchema.plugin(uniqueValidator)
 userSchema.methods.validatePassword = function(password) {
   return bcrypt.compareSync(password, this.password)
 }
+
 
 // Define and export the Model 
 export default mongoose.model('User', userSchema)

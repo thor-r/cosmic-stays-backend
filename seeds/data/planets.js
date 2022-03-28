@@ -138,7 +138,7 @@ export default [
   {
     name: 'Neptune', 
     planetPosition: 9,
-    planetOverview: 'Cold Icy Planet like Uranus, except you need to travel an extra 8 nyears to get there. ',
+    planetOverview: 'Cold Icy Planet like Uranus, except you need to travel an extra 8 years to get there. ',
     distanceFromEarth: '4.6 billion km',
     travelTime: '22 years',
     cryoSleepRequired: 'Yes',

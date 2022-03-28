@@ -1,3 +1,6 @@
+import { Buffer } from 'buffer'
+
+
 export const getTokenFromLocalStorage = () => {
   return window.localStorage.getItem('planets-token')
 }
@@ -26,3 +29,4 @@ export const userIsAuthenticated = () => {
 
   return currentTime < payload.exp
 }
+
