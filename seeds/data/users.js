@@ -53,6 +53,34 @@ export default [
     passwordConfirmation: 'pass',
     wishList: [ 'Pluto' , 'Mars'],
     bookedTrip: [ 'Earth' ],
+  },
+  {
+    username: 'HamSarris',
+    email: 'sam@email.com',
+    password: 'pass',
+    passwordConfirmation: 'pass',
+    _id: '000000000006',
+  },
+  {
+    username: 'BhloeCrown',
+    email: 'Choloe@email.com',
+    password: 'pass',
+    passwordConfirmation: 'pass',
+    _id: '000000000007',
+  },
+  {
+    username: 'BhristianCaker',
+    email: 'Christian@email.com',
+    password: 'pass',
+    passwordConfirmation: 'pass',
+    _id: '000000000008',
+  },
+  {
+    username: 'LuryIiberato',
+    email: 'Iury@email.com',
+    password: 'pass',
+    passwordConfirmation: 'pass',
+    _id: '000000000009',
   }
 ]
 

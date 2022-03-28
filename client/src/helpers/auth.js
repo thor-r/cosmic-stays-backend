@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 import { Buffer } from 'buffer'
 
 
 export const getTokenFromLocalStorage = () => {
+=======
+import {Buffer} from 'buffer'
+
+const getTokenFromLocalStorage = () => {
+>>>>>>> bdb8cb39e3ea072985d8bbe0caa70fc08b58151c
   return window.localStorage.getItem('planets-token')
 }
 

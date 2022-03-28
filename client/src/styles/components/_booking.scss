@@ -19,13 +19,23 @@
 }
   
 .booking-parent {
+<<<<<<< HEAD
+=======
+  background-color: aqua;
+>>>>>>> bdb8cb39e3ea072985d8bbe0caa70fc08b58151c
   width: 750px;
   height: 800px;
   display: flex;
   flex-direction: column;
   justify-self: center;
+<<<<<<< HEAD
   margin-left: 500px;
   margin-top: 80px;
+=======
+  // margin-left: 500px;
+  // margin-top: 80px;
+  margin: 60px auto;
+>>>>>>> bdb8cb39e3ea072985d8bbe0caa70fc08b58151c
   border-radius: 40px;
   background: url('https://i.imgur.com/IMxGuoe.jpg') center;
   background-size: contain;
@@ -66,4 +76,6 @@ input {
 .btn-primary {
   margin-left: 40px;
 }
+
+
 

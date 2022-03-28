@@ -3,8 +3,8 @@
   grid-template-columns: 12fr 2fr 2fr 2fr 2fr;
   align-items: end;
   width: 90%;
-  margin-top: 8px;
 }
+
 .btn-nav {
   margin-right: 25px;
   width: 120px;
@@ -13,9 +13,18 @@
 }
 
 .btn-logo{
+<<<<<<< HEAD
   margin-left: 25px;
   border: 2px solid #A9B3CE;
   color: aliceblue;
+=======
+  img {
+    margin-top: 20px;
+    max-height: 100px;
+    max-width: 100px;
+  }
+  margin-left: 50px;
+>>>>>>> bdb8cb39e3ea072985d8bbe0caa70fc08b58151c
 }
 
 .nav-offers {
@@ -23,4 +32,11 @@
   margin-right: -80px;
 }
 
+.logo {
+  background-size: cover;
+}
+
+.nav-links {
+  margin-left: 300px;
+}
 
