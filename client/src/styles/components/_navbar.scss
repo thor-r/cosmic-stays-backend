@@ -3,8 +3,8 @@
   grid-template-columns: 12fr 2fr 2fr 2fr 2fr;
   align-items: end;
   width: 90%;
-  margin-top: 8px;
 }
+
 .btn-nav {
   margin-right: 25px;
   width: 120px;
@@ -26,4 +26,11 @@
   margin-right: -80px;
 }
 
+.logo {
+  background-size: cover;
+}
+
+.nav-links {
+  margin-left: 300px;
+}
 
