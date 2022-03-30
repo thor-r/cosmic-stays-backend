@@ -22,7 +22,7 @@ const startServer = async () => {
     })
 
     //Routes
-    app.use(router)
+    app.use('/api', router)
 
     //Catch Errors
     app.use((_req, res) => {

@@ -1,0 +1,155 @@
+
+
+
+.profile-cont {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  height: 300px;
+
+  .profile-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: solid #A9B3CE 5px;
+    height: 100%;
+    background-image: url('../../image/basic-profile-page.jpeg');
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+  }
+  
+  .profile-card {
+    color: #A9B3CE;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #111D4A;
+    padding: 30px 40px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    border: 2px solid #A9B3CE;
+  }
+  .profile-info{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    
+    .profile-name {
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      height: 100%;
+    }
+    .profile-email {
+      font-size: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100%;
+    }
+  }
+}
+
+
+.singleReview{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background-color: white;
+  padding: 20px 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid #A9B3CE;
+  margin-top: 5px;
+  color: black;
+  font-size: 18px;
+
+  .review-name {
+font-weight: 900;
+font-size: 24px;
+  }
+.review-rating {
+  font-weight: 900;
+  font-size: 24px;
+}
+.review-info {
+}
+.review-button {
+    padding: 15px;
+    font-size: 20px;
+}
+.review-spacer {
+  border: solid 2px #111D4A;
+  height: 40px;
+  width: 2px;
+}
+      
+}
+.singleWishlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  max-width: 300px;
+  background-color: white;
+  padding: 20px 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid #A9B3CE;
+  margin-top: 5px;
+  color: #A9B3CE;
+}
+.review-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #111D4A;
+  padding: 30px 40px;
+  margin-top: 40px;
+  border-radius: 10px;
+  border: 2px solid #A9B3CE;
+  margin-top: 20px;
+  color: #A9B3CE;
+}
+
+.wishList-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: solid 5px black;
+  height: 100%;
+  width: 100%;
+  background-color: #111D4A;
+  padding: 30px 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid #A9B3CE;
+  margin-top: 20px;
+  color: #A9B3CE;
+}
+
+
+.profilePic {
+  max-height: 200px;
+}
+
+.wishList-cont {
+  text-align: center;
+  margin-bottom: 60px;
+}
+

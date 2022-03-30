@@ -7,11 +7,12 @@ import { secret } from '../config/environment.js'
 
 export const registerUser = async (req, res) => {
   try {
+    // console.log(req.body)
     const newUser = await User.create(req.body)
     console.log(newUser)
     return res.status(202).json({ message: 'Account Registered' })
   } catch (error) {
-    return res.status(422).json({ message: 'Account Registered' })
+    return res.status(422).json({ message: error })
   }
 }
 
@@ -22,11 +23,11 @@ export const loginUser = async (req, res) => {
     const { email, password } = req.body
     const userToLogin = await User.findOne({ email: email })
     if (!userToLogin || !userToLogin.validatePassword(password)) {
-      return res.status(401).json({ message: 'Email and Password combination not found'})
+      return res.status(401).json({ message: 'Email and Password combination not found' })
     }  
     const token = jwt.sign({ sub: userToLogin._id }, secret, { expiresIn: '30 days' })
     return res.status(200).json({ message: `Welcome back ${userToLogin.username}`, token: token })
   } catch (error) {
-    return res.status(402).json(error)
+    return res.status(401).json(error)
   }
 }

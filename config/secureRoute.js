@@ -4,10 +4,11 @@ import { secret } from './environment.js'
 
 export const secureRoute = async (req, res, next) => {
   try {
-    console.log('headers', req.headers)
+    // console.log('headers', req.headers)
+
     if (!req.headers.authorization) throw new Error('Missing Header')
     
-    const token = req.headers.authorization.replace('Bearer', '')
+    const token = req.headers.authorization.replace('Bearer ', '')
 
     const payload = jwt.verify(token, secret)
     console.log(payload.sub)

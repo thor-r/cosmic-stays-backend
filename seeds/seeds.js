@@ -25,7 +25,7 @@ const seedDatabase = async () => {
 
     // Seed all the collections 
     const planetsAdded = await Planet.create(planetsWithOwners)
-    console.log(`🌱 Seeded database with ${planetsAdded.length} movies`)
+    console.log(`🌱 Seeded database with ${planetsAdded.length} planets`)
 
     // Close database connection
     await mongoose.connection.close()

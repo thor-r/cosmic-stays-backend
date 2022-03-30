@@ -14,6 +14,7 @@ const userSchema = new Schema({
 
 // Hide Password when pulling out user information for reviews 
 userSchema.set('toJSON', {
+  virtuals: true, 
   transform(_doc, json){
     delete json.password
     return json
@@ -27,9 +28,42 @@ userSchema
     this._passwordConfirmation = passwordConfirmation
   })
 
+//Creating Review Virtual Field 
+userSchema
+  .virtual('reviewedPlanet', {
+    ref: 'Planet', 
+    localField: '_id',
+    foreignField: 'reviews.owner',
+    get: function(res){
+      let matchedReviews = []
+      if (res) {
+        res.forEach(re => {
+          matchedReviews = [ 
+            ...matchedReviews, 
+            ...re.reviews.filter(r => r.owner.equals(this._id)).map(r => {
+              r._doc.planetId = re._id
+              r._doc.planet = re.name
+              return r
+            })
+          ]
+        }) 
+      }
+      return matchedReviews
+    },
+
+  })
+
 // Creating WishList Virtual Field
 userSchema
   .virtual('wishList', {
+    ref: 'Planet',
+    localField: '_id',
+    foreignField: 'owner',
+  })
+
+// Creating BookedTrip Virtual Field
+userSchema
+  .virtual('bookedTrip', {
     ref: 'Planet',
     localField: '_id',
     foreignField: 'owner',
@@ -62,6 +96,7 @@ userSchema.plugin(uniqueValidator)
 userSchema.methods.validatePassword = function(password) {
   return bcrypt.compareSync(password, this.password)
 }
+
 
 // Define and export the Model 
 export default mongoose.model('User', userSchema)

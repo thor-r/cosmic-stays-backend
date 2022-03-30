@@ -1,0 +1,194 @@
+.offer_box {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.offer_row {
+  display: flex;
+  width: 400px;
+  height: 300px;
+  justify-content:center;
+  margin: 50px auto;
+  border: 5px solid black;
+  border-radius: 25px;
+  background-color: #111D4A;
+  padding: 30px 40px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 2px solid #A9B3CE;
+  margin-top: 40px;
+  color: #A9B3CE;
+}
+
+.carousel-inner{
+  height: 100%;
+  width: 100%;
+}
+
+.listed_offers {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 200px;
+  height: 150px;
+  border: 5px solid black;
+  margin: 10px;
+  border-radius: 25px; 
+  background-color: black;
+  padding: 30px 40px;
+  margin-top: 20px;
+  border: 2px solid #A9B3CE;
+  margin-top: 20px;
+  color: #A9B3CE;
+}
+
+.featured-offers{
+  border: 2px solid #A9B3CE;
+  border-radius: 25px; 
+  background-color: #111D4A;
+  margin-top: 20px;
+  border: 2px solid #A9B3CE;
+  margin-top: 20px;
+  color: #A9B3CE;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#offer-0 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../img/offers-img/offer-1.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
+#offer-1 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../img/offers-img/offer-2.jpg');
+  background-position: center;
+  background-size: auto;
+  color: aquamarine;
+}
+
+#offer-2 {
+  color: black;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../img/offers-img/offer-3.png');
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+#offer-3 {
+  color: #A9B3CE;;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../img/offers-img/offer-0.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
+#offer-4 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../img/offers-img/offer-4.jpeg');
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+#offer-5 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../img/offers-img/offer-15.png');
+  background-position: center;
+  background-size: cover;
+}
+#offer-6 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../img/offers-img/offer-5.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+#offer-7 {
+  color: aquamarine;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../img/offers-img/offer-6.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+#offer-8 {
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../img/offers-img/offer-13.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+#offer-9 {
+  color: aquamarine;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../img/offers-img/offer-7.jpeg');
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+#offer-10 {
+  color: aquamarine;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../img/offers-img/offer-8.jpeg');
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+#offer-11 {
+  color: aquamarine;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../img/offers-img/offer-9.jpeg');
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+#offer-12 {
+  color: aquamarine;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../img/offers-img/offer-10.jpeg');
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+#offer-13 {
+  color: aquamarine;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../img/offers-img/offer-11.png');
+  background-position: top;
+  background-size: cover;
+}
+#offer-14 {
+  color: black;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../img/offers-img/offer-12.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+#offer-15 {
+  color: aquamarine;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../img/offers-img/offer-14.jpeg');
+  background-position: center;
+  background-size:auto;
+}
+
+.featured-row {
+  margin-bottom: 15px;
+}
