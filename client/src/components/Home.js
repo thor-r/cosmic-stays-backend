@@ -34,33 +34,24 @@ const Home = () => {
 
 return (
   <>
-  
     <header className='title'>
       <h1>C</h1>
     </header>
 
     <div className='planets-container'>
-
-
       <div className='planet-div'>
+      
       {orderingPlanets()}
       {planets.map((planet, i) => {
         if (planet.isReal === true && i <= 10) {
           return (
-
             <>
-        
+              
                 <Link className='planet_face' to={`/planets/${planet.id}`}>
-        
                 <img className={`planet_face ${planet.name}`} src={planet.image} alt={planet.name} />
-  
                 <div className='hover-info'>・{planet.name} <br></br> ・{planet.distanceFromEarth} <br></br> ・{planet.travelTime} away </div> 
-
-                        
             </Link>
-          
           </>
-                
           )
         } else {
           console.log("no matching planets")

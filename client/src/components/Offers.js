@@ -44,7 +44,7 @@ const Offers = () => {
       </Row>
       <Row className= 'featured-offers'>
         <Row className= 'text-white d-flex justify-content-center'> <h2 className= 'd-flex justify-content-center'> Featured Offers! </h2> </Row>
-        <Row> { allOffers } </Row>
+        <Row className='featured-row'> { allOffers } </Row>
       </Row>
     </Container>
   )

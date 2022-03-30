@@ -25,7 +25,7 @@ const SiteNavbar = () => {
     <div className='nav-style'>
       <div className='nav-logo'>
         <Navbar.Brand>
-          <Link className='btn btn-logo' to='/'> <img className='logo' src={require('../image/spaceBook.png')} alt='logo' key='logo' /> </Link>
+          <Link className='btn btn-logo' to='/'> <img className='logo' src="https://i.imgur.com/9A9N14U.png" alt='logo' key='logo' /> </Link>
         </Navbar.Brand>
       </div>
 

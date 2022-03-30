@@ -5,21 +5,19 @@
   align-items: center;
   height: 600px;
   width: 500px;
-  margin-top: 105px;
-  margin-left: 125px;
   padding-bottom: 50px;
   border-radius: 50px;
   border: 3px solid #24E5AB;
   opacity: 0.8;
-  // background: url('https://i.imgur.com/cxQaBuN.jpg') center;
-  // background-size: contain;
   background: url('https://i.imgur.com/IMxGuoe.jpg') center;
   background-size: 100%;
-  
+  margin: 0 auto;
+  margin-top: 95px;
 }
   
 .booking-parent {
   background-color: aqua;
+<<<<<<< HEAD
   width: 750px;
   height: 800px;
   display: flex;
@@ -28,12 +26,20 @@
   // margin-left: 500px;
   // margin-top: 80px;
   margin: 60px auto;
+=======
+  max-width: 700px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+>>>>>>> backend
   border-radius: 40px;
   background: url('https://i.imgur.com/IMxGuoe.jpg') center;
   background-size: contain;
   background-repeat: no-repeat;
   background: rgb(175,113,222);
   background: linear-gradient(0deg, rgba(175,113,222,1) 8%, rgba(45,178,253,1) 100%);
+  margin: 0 auto;
+  margin-top: 40px;
   
 }
 
@@ -42,7 +48,6 @@
 .field {
   margin-bottom: 18px;
   justify-self: center;
-  // font-weight: lighter;
   color: white;
 }
 
