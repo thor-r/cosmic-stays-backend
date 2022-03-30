@@ -8,7 +8,7 @@ import User from '../models/user.js'
 const seedDatabase = async () => {
   try {
     // Connect to the database
-    await mongoose.connect(process.env.DB_URI)
+    await mongoose.connect(process.env.dbURI)
     console.log('🚀 Database Connected')
 
     // Drop all data from the database

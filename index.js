@@ -16,7 +16,7 @@ const app = express()
 const startServer = async () => {
   try {
     //attempt mongodb connection
-    await mongoose.connect(process.env.DB_URI)
+    await mongoose.connect(process.env.dbURI)
 
     //Middleware
 
