@@ -5,10 +5,6 @@ import { useParams } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> backend
 
 const Review = () => {
   const { planetId } = useParams()
