@@ -5,16 +5,12 @@ import { useParams } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 
 
-import { useNavigate } from 'react-router-dom'
+
 
 const Review = () => {
   const { planetId } = useParams()
   const localToken = localStorage.getItem('planets-token')
   const navigate = useNavigate()
-<<<<<<< HEAD
-
-=======
->>>>>>> bdb8cb39e3ea072985d8bbe0caa70fc08b58151c
   // const authAxios = axios.create({
   //   headers: {
   //     Authorization : `Bearer ${localToken}`

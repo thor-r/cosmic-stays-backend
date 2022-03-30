@@ -16,11 +16,7 @@
   margin-top: 20px;
   border-radius: 20px;
   border: 2px solid #A9B3CE;
-<<<<<<< HEAD
-  margin-top: 50px;
-=======
   margin-top: 40px;
->>>>>>> bdb8cb39e3ea072985d8bbe0caa70fc08b58151c
   color: #A9B3CE;
 }
 
@@ -48,22 +44,15 @@
 
 .featured-offers{
   border: 2px solid #A9B3CE;
-  background-color: #111D4A;
   border-radius: 25px; 
   background-color: #111D4A;
-  // padding: 20px 10px;
   margin-top: 20px;
   border: 2px solid #A9B3CE;
   margin-top: 20px;
   color: #A9B3CE;
-<<<<<<< HEAD
-  padding-left: 30px;
-  padding-bottom: 25px;
-=======
   margin-bottom: 60px;
   display: flex;
   justify-content: space-evenly;
->>>>>>> bdb8cb39e3ea072985d8bbe0caa70fc08b58151c
 }
 
 #offer-0 {
@@ -198,4 +187,8 @@
   background-image: url('../../../img/offers-img/offer-14.jpeg');
   background-position: center;
   background-size:auto;
+}
+
+.featured-row {
+  margin-bottom: 15px;
 }

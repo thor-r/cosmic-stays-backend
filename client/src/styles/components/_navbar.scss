@@ -13,18 +13,14 @@
 }
 
 .btn-logo{
-<<<<<<< HEAD
-  margin-left: 25px;
-  border: 2px solid #A9B3CE;
-  color: aliceblue;
-=======
+  height: max-content;
   img {
-    margin-top: 20px;
-    max-height: 100px;
-    max-width: 100px;
+    min-height: 100%;
+    max-width: 60px;
+    background-size: center contain;
+    border-radius: 10px;
   }
   margin-left: 50px;
->>>>>>> bdb8cb39e3ea072985d8bbe0caa70fc08b58151c
 }
 
 .nav-offers {

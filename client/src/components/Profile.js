@@ -31,8 +31,6 @@ const Profile = () => {
     getData()
   }, [])
 
-<<<<<<< HEAD
-=======
   useEffect(() => {
     const getData = async () => {
     try {
@@ -70,7 +68,6 @@ const Profile = () => {
     });
   }
 
->>>>>>> bdb8cb39e3ea072985d8bbe0caa70fc08b58151c
   return (
     <> 
     <Container className='profile-cont'> 

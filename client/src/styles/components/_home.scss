@@ -3,18 +3,20 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   max-width: 100%;
   height: auto;
-  background: url('https://i.imgur.com/nwn7Kc2.jpeg') center;
+  background: url('https://i.imgur.com/HMpcg7i.jpg') center;
   background-size: fill;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 
 .title {
   text-align: center;
   color: white;
-  background: url('https://i.imgur.com/5oyrRzx.png') center;
+  background: url('https://i.imgur.com/u8MjfJ5.png') center;
   background-size: contain;
   background-repeat: no-repeat;
   width: 200px;
@@ -26,7 +28,7 @@ body {
 }
 
 .planets-container {
-  perspective: 1000px;
+  perspective: 1900px;
   width: max-content;
   max-height: max-content;
   margin: 0 auto;
@@ -40,16 +42,9 @@ body {
   transform-style: preserve-3d; 
   animation: rotate360 60s infinite forwards linear;
   display: inline;
-  color: red;
+  margin: 0 auto;
 }
 
-.planet-link {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  transform-style: preserve-3d; 
-  display: inline;
-}
 
 .planet_face { 
   position: absolute;
@@ -65,46 +60,54 @@ body {
 .Moon {
   height: 105px;
   width: 150px;
-  margin-top: 20px;
+  margin-top: 30px;
 
 }
 
 .Pluto {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 90px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.Earth {
+  max-width: 190px;
+  max-height: 150px;
   margin-top: 20px;
 }
 
+// translateZ can be 550 or 600 but then change the perspective to 1000
 
 .planet_face:nth-child(1) {
-  transform: rotateY(0deg) translateZ(600px); }
+  transform: rotateY(0deg) translateZ(800px); }
 
 .planet_face:nth-child(2) { 
-    transform: rotateY(36deg) translateZ(600px); }
+    transform: rotateY(36deg) translateZ(800px); }
 
 .planet_face:nth-child(3) {
-  transform: rotateY(72deg) translateZ(600px); }
+  transform: rotateY(72deg) translateZ(800px); }
 
 .planet_face:nth-child(4) {
-  transform: rotateY(108deg) translateZ(600px); }
+  transform: rotateY(108deg) translateZ(800px); }
 
 .planet_face:nth-child(5) { 
- transform: rotateY(144deg) translateZ(600px); }
+ transform: rotateY(144deg) translateZ(800px); }
 
 .planet_face:nth-child(6) { 
- transform: rotateY(180deg) translateZ(600px); }
+ transform: rotateY(180deg) translateZ(800px); }
 
 .planet_face:nth-child(7) { 
- transform: rotateY(216deg) translateZ(600px); }
+ transform: rotateY(216deg) translateZ(800px); }
 
 .planet_face:nth-child(8) {
-  transform: rotateY(252deg) translateZ(600px); }
+  transform: rotateY(252deg) translateZ(800px); }
 
 .planet_face:nth-child(9) {
-  transform: rotateY(288deg) translateZ(600px); }
+  transform: rotateY(288deg) translateZ(800px); }
 
 .planet_face:nth-child(10) {
-  transform: rotateY(324deg) translateZ(600px); }
+  transform: rotateY(324deg) translateZ(800px); }
 
 
 @keyframes rotate360 {
@@ -138,8 +141,9 @@ body {
 .hover-info {
 opacity: 0;
 position: absolute;
-width: 250px;
-height: 100px;
+// width: 200px;
+// height: 100px;
+max-width: fit-content;
 color: #fff;
 padding: 0.75em 1em;
 font-weight: lighter;
@@ -151,6 +155,7 @@ background-color: rgba(0,0,0,.7);
 transition: opacity .3s ease-in-out;
 border-radius: 30px;
 margin-left: 80px;
+margin-top: 160px;
 
 }
 
