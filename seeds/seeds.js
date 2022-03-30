@@ -1,14 +1,14 @@
 import mongoose from 'mongoose'
 import planetData from './data/planets.js'
 import userData from './data/users.js'
-import { dbURI } from '../config/environment.js'
+// import { dbURI } from '../config/environment.js'
 import Planet from '../models/planet.js'
 import User from '../models/user.js'
 
 const seedDatabase = async () => {
   try {
     // Connect to the database
-    await mongoose.connect(dbURI)
+    await mongoose.connect(process.env.DB_URI)
     console.log('🚀 Database Connected')
 
     // Drop all data from the database
