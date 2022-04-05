@@ -5,14 +5,14 @@
 - [Brief](#brief)
 - [Technologies Used](#technologies-used)
 - [Development Process](#development-process)
-- [Planning](#planning-&-preparation)
-- [Back-end](#back-end)
-- [Front-end](#front-end)
-- [Homepage](#homepage)
-- [Homepage Styling](#homepage-styling)
-- [Navbar](#navbar)
-- [Planet Detail Page](#planet-detail-page)
-- [Booking Page](#booking-page)
+    - [Planning & Preparation](#planning-and-preparation)
+    - [Back-end](#back-end)
+    - [Front-end](#front-end)
+        - [Homepage](#homepage)
+        - [Homepage Styling](#homepage-styling)
+        - [Navbar](#navbar)
+        - [Planet Detail Page](#planet-detail-page)
+        - [Booking Page](#booking-page)
 - [Challenges](#challenges)
 - [Wins](#wins)
 - [Key Learnings](#key-learnings)
@@ -78,7 +78,7 @@ Group project (3 people). Create a full-stack React app using Node.js, Express a
 
 ## Development Process
 
-### Planning & preparation 
+### Planning and preparation 
 
 This was for all of us our first time building a Full-Stack app so we decided that we would code the back-end together through a mix of VScode live-share and zoom screen-sharing. We thought that this approach would bolster our error handling with multiple eyes on a particular section at once. 
 
