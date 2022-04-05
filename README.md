@@ -21,6 +21,13 @@
 ## Space Book 
 A MERN-Stack app. Once registered users can book interstellar travel, leave reviews on their planet stays and search travel offers before their trip. My fellow project members were [Jomari](https://github.com/CamJom) and [Neil](https://github.com/Spurs129).
 
+![homepage](https://user-images.githubusercontent.com/87788714/161665868-767cb4c2-25c3-4509-b206-22f17a0a5f41.gif)
+
+![offers](https://user-images.githubusercontent.com/87788714/161665981-98c60f52-30e1-4187-b1f4-176e21d55650.gif)
+
+![reviews](https://user-images.githubusercontent.com/87788714/161666135-a44d1a5f-aa5a-4741-b0e8-556f5ceb5d07.gif)
+
+
 ### Code Installation 
 
     1. Clone the repo
