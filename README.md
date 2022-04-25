@@ -48,7 +48,7 @@ A MERN-Stack app. Once registered users can book interstellar travel, leave revi
 Email: thor@email.com | Password: pass
 
 ### Build-time
-/10 days/
+*10 days*
 
 ### Brief 
 Group project (3 people). Create a full-stack React app using Node.js, Express and MongoDB. 
